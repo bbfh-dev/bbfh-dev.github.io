@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="The only correct IQ Test" />
+    <meta name="author" content="The Tux" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, width=device-width" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Who said it Learnix or Hitler?</title>
+    <link href="../styles.css" rel="stylesheet" />
+    <script src="shitcode.js" defer></script>
+</head>
+
+<body>
+    <h1>Who said it: Learnix or Hitler?</h1>
+    <h3>Brought to you by BubbleFish</h3>
+    <hr />
+
+    <section>
+        <fieldset>
+            <legend>"We need to suit up, and we need to kill these ___"</legend>
+            <div>
+                <input type="radio" id="m1" name="q1" />
+                <label for="m1">Hitler</label>
+            </div>
+            <div>
+                <input type="radio" id="m2" name="q1" data-correct="true" />
+                <label for="m2">LearnixTV</label>
+            </div>
+            <button onclick="answer(this)">Answer</button>
+            <span class="result" data-opt="m1" hidden>Hitler has never said that.</span>
+            <span class="result" data-opt="m2" hidden>
+                Learnix said this during his
+                <a href="https://youtu.be/rbLJhOWK2i8?t=9401">live stream</a>
+            </span>
+        </fieldset>
+
+        <fieldset>
+            <legend>"I'm going to kill myself"</legend>
+            <div>
+                <input type="radio" id="m1-1" name="q2" />
+                <label for="m1-1">Hitler</label>
+            </div>
+            <div>
+                <input type="radio" id="m2-1" name="q2" data-correct="true" />
+                <label for="m2-1">LearnixTV</label>
+            </div>
+            <button onclick="answer(this)">Answer</button>
+            <span class="result" data-opt="m1-1" hidden>Hitler has never said that.</span>
+            <span class="result" data-opt="m2-1" hidden>
+                Learnix said this during his
+                <a href="https://youtu.be/wueGXtM9oAU?t=1533">live stream</a>
+            </span>
+        </fieldset>
+
+        <fieldset>
+            <legend>"___ is the greatest enemy of all"</legend>
+            <div>
+                <input type="radio" id="m1-2" name="q3" data-correct="true" />
+                <label for="m1-2">Hitler</label>
+            </div>
+            <div>
+                <input type="radio" id="m2-2" name="q3" />
+                <label for="m2-2">LearnixTV</label>
+            </div>
+            <button onclick="answer(this)">Answer</button>
+            <span class="result" data-opt="m1-2" hidden>Hitler said “The Jewish race is the greatest enemy of all other
+                races.”</span>
+            <span class="result" data-opt="m2-2" hidden>
+                Learnix never said that
+            </span>
+        </fieldset>
+
+        <fieldset>
+            <legend>"I hate this ___"</legend>
+            <div>
+                <input type="radio" id="m1-3" name="q4" />
+                <label for="m1-3">Hitler</label>
+            </div>
+            <div>
+                <input type="radio" id="m2-3" name="q4" data-correct="true" />
+                <label for="m2-3">LearnixTV</label>
+            </div>
+            <button onclick="answer(this)">Answer</button>
+            <span class="result" data-opt="m1-3" hidden>Hitler has never said that.</span>
+            <span class="result" data-opt="m2-3" hidden>
+                Learnix said this about the Sun during his
+                <a href="https://youtu.be/wueGXtM9oAU?t=916">live stream</a>
+            </span>
+        </fieldset>
+
+        <fieldset>
+            <legend>"Kill the ___ kill all those ___!"</legend>
+            <div>
+                <input type="radio" id="m1-4" name="q5" />
+                <label for="m1-4">Hitler</label>
+            </div>
+            <div>
+                <input type="radio" id="m2-4" name="q5" data-correct="true" />
+                <label for="m2-4">LearnixTV</label>
+            </div>
+            <button onclick="answer(this)">Answer</button>
+            <span class="result" data-opt="m1-4" hidden>Hitler has never said that.</span>
+            <span class="result" data-opt="m2-4" hidden>
+                Learnix said this about the Arch Users during his
+                <a href="https://youtu.be/rbLJhOWK2i8?t=9428">live stream</a>
+            </span>
+        </fieldset>
+
+        <button onclick="finish()">Finish</button>
+    </section>
+</body>
+
+</html>
