@@ -1,0 +1,131 @@
+:root {
+  --theme-background: #121212;
+  --theme-section: #222222;
+  --theme-border: #333333;
+  --theme-foreground: #c1c1c1;
+  --theme-highlight: #ffffff;
+  --theme-shade: #7c7c7c;
+
+  --theme-hover: rgba(255, 255, 255, 0.08);
+
+  --sidebar-width: 20rem;
+  --max-width: 50rem;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+main,
+aside,
+nav,
+nav > div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--theme-background);
+  color: var(--theme-foreground);
+
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+aside {
+  width: var(--sidebar-width);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+aside > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--theme-highlight);
+}
+
+aside > header h1 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+aside > section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+main {
+  width: calc(100% - var(--sidebar-width));
+  max-width: var(--max-width);
+  background-color: var(--theme-section);
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+main > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+main > header svg {
+  color: var(--theme-shade);
+}
+
+main > header span {
+  color: var(--theme-highlight);
+}
+
+main > section {
+  line-height: 1.5;
+  color: var(--theme-foreground);
+}
+
+main > section b {
+  font-weight: 600;
+  color: var(--theme-highlight);
+}
+
+nav {
+  gap: 0.5rem;
+}
+
+nav > header {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-bottom: 2px solid var(--theme-border);
+}
+
+nav > header hr {
+  background-color: var(--theme-border);
+  min-width: 2px;
+  height: 100%;
+  border: none;
+}
+
+nav > header button {
+  width: 100%;
+}
+
+.is-hidden {
+  display: none;
+}
