@@ -32,28 +32,14 @@
             </a>
         </header>
         <section>
-            {{ if eq .Topic "bbfh" }}
-            <a class="widget-topic is-selected" href="index.html">
-                <img alt="bbfh" src="assets/images/bbfh.png" width="48px" />
-            </a>
-            <a class="widget-topic" href="smithed.html">
-                <img alt="smithed" src="assets/images/smithed.png" width="48px" />
-            </a>
-            {{ else if eq .Topic "smithed"}}
+            
             <a class="widget-topic" href="index.html">
                 <img alt="bbfh" src="assets/images/bbfh.png" width="48px" />
             </a>
             <a class="widget-topic is-selected" href="smithed.html">
                 <img alt="smithed" src="assets/images/smithed.png" width="48px" />
             </a>
-            {{ else }}
-            <a class="widget-topic" href="index.html">
-                <img alt="bbfh" src="assets/images/bbfh.png" width="48px" />
-            </a>
-            <a class="widget-topic" href="smithed.html">
-                <img alt="smithed" src="assets/images/smithed.png" width="48px" />
-            </a>
-            {{ end }}
+            
         </section>
         <section>
             <input class="widget-input is-search" type="search" placeholder="Search..." id="search" />
@@ -65,7 +51,7 @@
                 </svg>
             </label>
         </section>
-        <!-- Literally just adds some padding -->
+        
         <div></div>
         <nav>
             <header>
@@ -74,31 +60,51 @@
                 <button class="widget-tab" data-target="links" onclick="setTab(this)">Links</button>
             </header>
             <div class="tab-section" id="pages">
-                {{ range .Pages }}
-                <button class="widget-item" data-name="{{ .Name }}" onclick="setPage(this)">
+                
+                <button class="widget-item" data-name="introduction" onclick="setPage(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                         fill="currentColor">
                         <path
                             d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
                     </svg>
-                    <span>{{ .Label }}</span>
+                    <span>Introduction</span>
                     <div class="widget-content is-hidden">
-                        {{ .Body }}
+                        Smithed is an open-source platform for exploring, sharing and supercharging minecraft data & resource packs.
+
+<br /><br />
+
+In June 2023, I joined Smithed as a volunteer to help with a complete redesign. I'm still working on making Smithed a
+better site, together with other members that help me greatly.
+
+<br /><br />
+
+Currently I'm working on improving the current design, you can check out the <b>Site prototype</b> in <b>Links</b>
+section.
+
                     </div>
                 </button>
-                {{ end }}
+                
             </div>
             <div class="tab-section is-hidden" id="links">
-                {{ range .Links }}
-                <a class="widget-item" href="{{ .URL }}">
+                
+                <a class="widget-item" href="https://smithed.net/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                         fill="currentColor">
                         <path
                             d="m5 2c-1.662 0-3 1.338-3 3v6c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-1h-2v1c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1h1v-2h-1zm3 0v2h2.5859l-3.293 3.293a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.293-3.293v2.5859h2v-3c0-1.662-1.338-3-3-3h-3z" />
                     </svg>
-                    <span>{{ .Label }}</span>
+                    <span>Official Website</span>
                 </a>
-                {{ end }}
+                
+                <a class="widget-item" href="https://bbfh-dev.github.io/external/smithed/index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="currentColor">
+                        <path
+                            d="m5 2c-1.662 0-3 1.338-3 3v6c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-1h-2v1c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1h1v-2h-1zm3 0v2h2.5859l-3.293 3.293a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.293-3.293v2.5859h2v-3c0-1.662-1.338-3-3-3h-3z" />
+                    </svg>
+                    <span>Site prototype</span>
+                </a>
+                
             </div>
         </nav>
     </aside>
