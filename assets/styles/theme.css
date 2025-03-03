@@ -138,12 +138,26 @@ main a:focus {
   text-decoration: underline;
 }
 
+main h2 {
+  text-align: center;
+  color: var(--theme-foreground);
+}
+
+main h2 + h4 {
+  margin: 0;
+}
+
 main h4 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 0.75;
   margin-top: 1rem;
   color: var(--theme-foreground);
+}
+
+main > img {
+  width: 100%;
+  border: 2px solid #000000;
 }
 
 button:focus,
