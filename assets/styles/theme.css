@@ -106,6 +106,7 @@ main {
 }
 
 main > header {
+  position: relative;
   justify-content: center;
   font-weight: 400;
   color: var(--theme-foreground);
@@ -113,11 +114,8 @@ main > header {
 }
 
 main > header > button {
-  margin-right: auto;
-}
-
-main > header > span {
-  margin-right: auto;
+  position: absolute;
+  left: 0;
 }
 
 main > hr {
