@@ -245,3 +245,22 @@ main a:focus {
     display: flex;
   }
 }
+
+@media only screen and (max-width: 32rem) {
+  .grid-2 {
+    grid-template-columns: auto;
+  }
+
+  .grid-2 > *:nth-child(2),
+  .grid-2 > *:nth-last-child(2) {
+    border-radius: 0;
+  }
+
+  .grid-2 > *:first-child {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .grid-2 > *:last-child {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
