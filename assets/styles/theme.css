@@ -228,6 +228,10 @@ main a:focus,
   background-color: var(--theme-section);
 }
 
+.touch-only {
+  display: none;
+}
+
 @media only screen and (max-width: 82rem) {
   #root {
     justify-content: start;
@@ -268,6 +272,10 @@ main a:focus,
   }
 
   aside .desktop-only {
+    display: flex;
+  }
+
+  .touch-only {
     display: flex;
   }
 }
