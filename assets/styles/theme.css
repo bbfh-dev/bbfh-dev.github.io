@@ -69,6 +69,10 @@ aside > header a:focus {
   text-decoration: underline;
 }
 
+aside > header button {
+  margin-left: auto;
+}
+
 aside > section {
   padding: 1rem;
 }
@@ -108,6 +112,14 @@ main > header {
   line-height: 1;
 }
 
+main > header > button {
+  margin-right: auto;
+}
+
+main > header > span {
+  margin-right: auto;
+}
+
 main > hr {
   width: 100%;
   height: 2px;
@@ -138,7 +150,8 @@ main h4 {
 
 button:focus,
 aside > section a:focus,
-main a:focus {
+main a:focus,
+.mobile-button:focus {
   outline: 2px solid var(--theme-foreground);
 }
 
@@ -200,6 +213,19 @@ main a:focus {
   border-left: 2px solid var(--palette-orange);
   padding-left: 1rem;
   font-weight: 400;
+}
+
+.mobile-button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.mobile-button:hover {
+  background-color: var(--theme-section);
 }
 
 @media only screen and (max-width: 82rem) {

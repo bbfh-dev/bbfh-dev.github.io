@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="/assets/scripts/common.js" defer></script>
 </head>
 
 <body>
@@ -24,6 +26,13 @@
             <header>
                 <img src="/assets/images/bbfh.png" alt="logo" />
                 <a href="/" class="desktop-only">BubbleFish</a>
+                <button class="mobile-button desktop-only" onclick="scrollMobile(true)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="currentColor">
+                        <path
+                            d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
+                    </svg>
+                </button>
             </header>
             <section>
                 <a href="/index.html">
@@ -46,6 +55,13 @@
         </aside>
         <main>
             <header>
+                <button class="mobile-button" onclick="scrollMobile(false)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                        fill="currentColor">
+                        <path
+                            d="m10.708 3.7082c0.39174-0.39173 0.39174-1.0243 0-1.416-0.39174-0.39174-1.0243-0.39174-1.416 0l-5.7051 5.707 5.7051 5.707c0.39174 0.39174 1.0243 0.39174 1.416 0 0.39174-0.39173 0.39174-1.0243 0-1.416l-4.293-4.291z" />
+                    </svg>
+                </button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                     <path
                         d="m8 1a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 1-0.07031 7 7 0 0 0 0.2617-0.05859 1 1 0 0 0 0.668-0.9375 1 1 0 0 0-0.0625-0.334l-1.213-3.639a1 1 0 0 1-0.07617-0.3828 1 1 0 0 1 0.07617-0.3828 1 1 0 0 1 0.2168-0.3242 1 1 0 0 1 0.3242-0.2168 1 1 0 0 1 0.3828-0.07617 1 1 0 0 1 0.1309 0.007812 1 1 0 0 1 0.1191 0.02344l0.1328 0.04492 3.689 1.229a1 1 0 0 0 0.2793 0.04688 1 1 0 0 0 0.9883-0.9023 7 7 0 0 0 0.08203-1.027 7 7 0 0 0-7-7zm-0.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm4 2a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm-7.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm2 4a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5z" />
