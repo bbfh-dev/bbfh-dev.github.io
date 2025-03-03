@@ -1,0 +1,63 @@
+:root {
+  --theme-background: #121212;
+  --theme-section: rgba(255, 255, 255, 0.08);
+  --theme-border: #333333;
+  --theme-shade: #7c7c7c;
+  --theme-foreground: #ffffff;
+  --theme-text: #aaaaaa;
+  --theme-hover: rgba(255, 255, 255, 0.16);
+
+  --palette-blue: #11a0c9;
+  --palette-orange: #f89715;
+  --palette-green: #1f7f45;
+  --palette-red: #bc3636;
+
+  --aside-width: 16rem;
+  --max-width: 50rem;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+aside > header,
+aside > header a,
+aside > section a,
+main > header,
+.grid-2 > article,
+.grid-2 > article > div,
+.sign-warn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+aside > section,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}

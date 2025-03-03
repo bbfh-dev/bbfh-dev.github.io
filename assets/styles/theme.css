@@ -1,0 +1,242 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--theme-background);
+  color: var(--theme-foreground);
+
+  font-family: Lexend, serif;
+  font-weight: 300;
+  line-height: 1;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#root > * {
+  transition: min-width 200ms;
+  scroll-snap-align: start;
+  min-width: var(--aside-width);
+}
+
+aside {
+  min-height: 100%;
+  width: var(--aside-width);
+}
+
+aside > header {
+  font-weight: 400;
+  padding: 1rem;
+}
+
+aside > header img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+aside > header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+aside > header a:hover,
+aside > header a:focus {
+  color: var(--palette-blue);
+  outline: none;
+  text-decoration: underline;
+}
+
+aside > section {
+  padding: 1rem;
+}
+
+aside > section a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+aside > section a.selected,
+aside > section a:hover {
+  background-color: var(--theme-section);
+}
+
+main {
+  position: relative;
+  background-color: var(--theme-section);
+  color: var(--theme-text);
+  border-radius: 1rem;
+  padding: 1rem;
+  min-height: 100%;
+  width: var(--max-width);
+  margin-right: var(--aside-width);
+  gap: 1rem;
+  line-height: 1.5;
+  overflow-y: auto;
+}
+
+main > header {
+  justify-content: center;
+  font-weight: 400;
+  color: var(--theme-foreground);
+  line-height: 1;
+}
+
+main > hr {
+  width: 100%;
+  height: 2px;
+  min-height: 2px;
+  background-color: var(--theme-border);
+  border: none;
+}
+
+main a {
+  color: var(--palette-blue);
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+main a:hover,
+main a:focus {
+  text-decoration: underline;
+}
+
+main h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 0.75;
+  margin-top: 1rem;
+  color: var(--theme-foreground);
+}
+
+button:focus,
+aside > section a:focus,
+main a:focus {
+  outline: 2px solid var(--theme-foreground);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+}
+
+.grid-2 > *:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.grid-2 > *:nth-child(2) {
+  border-radius: 0 1rem 0 0;
+}
+
+.grid-2 > *:last-child {
+  border-radius: 0 0 1rem 0;
+}
+
+.grid-2 > *:nth-last-child(2) {
+  border-radius: 0 0 0 1rem;
+}
+
+.grid-2 > article {
+  background-color: var(--theme-section);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  color: var(--theme-foreground);
+  gap: 1rem;
+}
+
+.grid-2 > article strong {
+  font-weight: 500;
+}
+
+.grid-2 > article span {
+  font-weight: 300;
+  opacity: 0.3;
+}
+
+.grid-2 > article > div {
+  margin-right: auto;
+}
+
+.grid-2 > article a {
+  color: inherit;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.grid-2 > article a:hover,
+.grid-2 > article a:focus {
+  background-color: var(--theme-section);
+}
+
+.sign-warn {
+  color: var(--palette-orange);
+  border-left: 2px solid var(--palette-orange);
+  padding-left: 1rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 82rem) {
+  #root {
+    justify-content: start;
+  }
+
+  main {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 60rem) {
+  :root {
+    --aside-width: 4rem;
+  }
+
+  #root {
+    justify-content: center;
+  }
+
+  aside .desktop-only {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  main .desktop-only {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 40rem) {
+  #root {
+    justify-content: start;
+  }
+
+  #root > * {
+    min-width: 100vw;
+  }
+
+  aside .desktop-only {
+    display: flex;
+  }
+}
