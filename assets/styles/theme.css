@@ -338,4 +338,12 @@ main a:focus,
   .grid-2 > *:last-child {
     border-radius: 0 0 1rem 1rem;
   }
+
+  main > .logo {
+    flex-direction: column;
+  }
+
+  main > .logo svg {
+    transform: rotate(90deg);
+  }
 }
