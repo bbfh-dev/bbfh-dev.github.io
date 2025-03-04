@@ -155,9 +155,38 @@ main h4 {
   color: var(--theme-foreground);
 }
 
+main h4 + ul {
+  margin-top: -0.5rem;
+}
+
+main ul {
+  margin: 0;
+}
+
 main > img {
   width: 100%;
   border: 2px solid #000000;
+  border-radius: 0.5rem;
+}
+
+main > .logo {
+  background: url("/assets/images/tile.svg") repeat 0.5rem 0.5rem;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  gap: 2rem;
+}
+
+main > .logo svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+main > .logo img {
+  background-color: #2d2d2d;
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
 }
 
 button:focus,

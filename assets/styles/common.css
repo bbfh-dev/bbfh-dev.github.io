@@ -29,7 +29,8 @@ aside > section a,
 main > header,
 .grid-2 > article,
 .grid-2 > article > div,
-.sign-warn {
+.sign-warn,
+main > .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
