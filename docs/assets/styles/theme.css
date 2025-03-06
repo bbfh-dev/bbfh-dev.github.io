@@ -179,6 +179,7 @@ main h4 + ul {
 
 main ul {
   margin: 0;
+  padding-left: 1rem;
 }
 
 main h5 {
