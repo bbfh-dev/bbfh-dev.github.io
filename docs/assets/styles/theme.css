@@ -149,6 +149,13 @@ main a:focus {
   text-decoration: underline;
 }
 
+main a.archive-link {
+  opacity: 0.5;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 0.75;
+}
+
 main h2 {
   text-align: center;
   color: var(--theme-foreground);
@@ -174,7 +181,20 @@ main ul {
   margin: 0;
 }
 
-main img {
+main h5 {
+  line-height: 0.5;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--theme-shade);
+}
+
+main em {
+  font-style: normal;
+  opacity: 0.33;
+}
+
+main > img,
+.carousell img {
   width: 100%;
   border: 2px solid #000000;
   border-radius: 0.5rem;
@@ -198,6 +218,25 @@ main > .logo img {
   background-color: #2d2d2d;
   border: 2px solid #000000;
   border-radius: 0.5rem;
+}
+
+main .row {
+  display: flex;
+}
+
+main .row > div {
+  margin-right: auto;
+}
+
+main .row > a {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: var(--palette-blue-alpha);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 400;
 }
 
 button:focus,
@@ -260,11 +299,20 @@ main a:focus,
   background-color: var(--theme-section);
 }
 
-.sign-warn {
-  color: var(--palette-orange);
-  border-left: 2px solid var(--palette-orange);
+.sign-warn,
+.sign-info {
   padding-left: 1rem;
   font-weight: 400;
+}
+
+.sign-warn {
+  color: var(--palette-orange);
+  border-left: 0.25rem solid var(--palette-orange);
+}
+
+.sign-info {
+  color: var(--theme-foreground);
+  border-left: 0.25rem solid var(--theme-foreground);
 }
 
 .mobile-button {
@@ -282,9 +330,6 @@ main a:focus,
 
 .touch-only {
   display: none;
-}
-
-.carousell {
 }
 
 .carousell > header {
@@ -319,79 +364,4 @@ main a:focus,
 
 .carousell > footer > div span.selected {
   background-color: var(--theme-foreground);
-}
-
-@media only screen and (max-width: 82rem) {
-  #root {
-    justify-content: start;
-  }
-
-  main {
-    margin-right: 0;
-  }
-}
-
-@media only screen and (max-width: 60rem) {
-  :root {
-    --aside-width: 4rem;
-  }
-
-  #root {
-    justify-content: center;
-  }
-
-  aside .desktop-only {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 45rem) {
-  main .desktop-only {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 40rem) {
-  #root {
-    justify-content: start;
-  }
-
-  #root > * {
-    min-width: 100vw;
-  }
-
-  aside .desktop-only {
-    display: flex;
-  }
-
-  .touch-only {
-    display: flex;
-  }
-}
-
-@media only screen and (max-width: 32rem) {
-  .grid-2 {
-    grid-template-columns: auto;
-  }
-
-  .grid-2 > *:nth-child(2),
-  .grid-2 > *:nth-last-child(2) {
-    border-radius: 0;
-  }
-
-  .grid-2 > *:first-child {
-    border-radius: 1rem 1rem 0 0;
-  }
-
-  .grid-2 > *:last-child {
-    border-radius: 0 0 1rem 1rem;
-  }
-
-  main > .logo {
-    flex-direction: column;
-  }
-
-  main > .logo svg {
-    transform: rotate(90deg);
-  }
 }

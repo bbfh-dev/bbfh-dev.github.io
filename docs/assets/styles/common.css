@@ -8,6 +8,7 @@
   --theme-hover: rgba(255, 255, 255, 0.16);
 
   --palette-blue: #11a0c9;
+  --palette-blue-alpha: rgba(17, 160, 201, 0.08);
   --palette-orange: #f89715;
   --palette-green: #1f7f45;
   --palette-red: #bc3636;
@@ -32,8 +33,10 @@ main > header,
 .grid-2 > article,
 .grid-2 > article > div,
 .sign-warn,
+.sign-info,
 main > .logo,
-.carousell > footer > div {
+.carousell > footer > div,
+main .row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,7 +45,8 @@ main > .logo,
 
 aside > section,
 main,
-.carousell {
+.carousell,
+main .row > div {
   display: flex;
   flex-direction: column;
   align-items: stretch;
