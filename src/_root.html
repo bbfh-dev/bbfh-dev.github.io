@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, width=device-width" />
+    <meta name="author" content="BubbleFish" />
+
+    <title>{{ .title }} — BBFH</title>
+    <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: light)" href="/assets/favicon-light.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-dark.ico">
+    <link href="/assets/styles/reset.css?version=2" rel="stylesheet" />
+    <link href="/assets/styles/common.css?version=2" rel="stylesheet" />
+    <link href="/assets/styles/theme.css?version=2" rel="stylesheet" />
+    <link href="/assets/styles/font.css?version=1" rel="stylesheet" />
+
+    <script src="/assets/scripts/common.js?version=1" defer></script>
+</head>
+
+<body>
+    <div id="root">
+        <aside>
+            <header>
+                <img src="/assets/images/bbfh.png" alt="logo" />
+                <a href="/" class="desktop-only">bbfh.me</a>
+                <button class="mobile-button touch-only" onclick="scrollMobile(true)">
+                    <!-- @include ./icons/angle_right.svg -->
+                </button>
+            </header>
+            <section>
+                <!-- #if filename == "index.html" -->
+                <a href="/index.html" class="selected">
+                    <!-- @include ./icons/hashtag.svg -->
+                    <span class="desktop-only">Index</span>
+                </a>
+                <!-- /if -->
+                <!-- #if filename != "index.html" -->
+                <a href="/index.html">
+                    <!-- @include ./icons/hashtag.svg -->
+                    <span class="desktop-only">Index</span>
+                </a>
+                <!-- /if -->
+
+                <!-- #if filename == "artwork.html" -->
+                <a href="/artwork.html" class="selected">
+                    <!-- @include ./icons/picture.svg -->
+                    <span class="desktop-only">Artwork</span>
+                </a>
+                <!-- /if -->
+                <!-- #if filename != "artwork.html" -->
+                <a href="/artwork.html">
+                    <!-- @include ./icons/picture.svg -->
+                    <span class="desktop-only">Artwork</span>
+                </a>
+                <!-- /if -->
+
+                <!-- #if filename == "theme.html" -->
+                <a href="/theme.html" class="selected">
+                    <!-- @include ./icons/palette.svg -->
+                    <span class="desktop-only">Website theme</span>
+                </a>
+                <!-- /if -->
+                <!-- #if filename != "theme.html" -->
+                <a href="/theme.html">
+                    <!-- @include ./icons/palette.svg -->
+                    <span class="desktop-only">Website theme</span>
+                </a>
+                <!-- /if -->
+            </section>
+        </aside>
+        <main>
+            <!-- @slot -->
+        </main>
+    </div>
+</body>
+
+</html>
