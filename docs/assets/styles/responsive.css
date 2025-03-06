@@ -71,4 +71,8 @@
   main > .logo svg {
     transform: rotate(90deg);
   }
+
+  .hide-on-phone {
+    display: none !important;
+  }
 }
