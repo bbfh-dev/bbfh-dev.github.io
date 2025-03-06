@@ -1,0 +1,66 @@
+<!-- #extend ./_root.html -->
+<!-- #extend ./_header.html -->
+<!-- @include ./icons/minecraft.svg -->
+<!-- /extend -->
+
+<hr />
+<div class="sign-warn">
+    <!-- @include ./icons/warning.svg -->
+    <span>This page is under development!</span>
+</div>
+<p>
+    I have spent a lot of time in Minecraft, many of those hours were spent developing various stuff:
+</p>
+
+<h2 id="maps">Minecraft maps</h2>
+
+<h4>CrowScout I (former Hey Neighbor I)</h4>
+<section class="carousell" data-progress="0">
+    <header class="hide-scrollbar" onscroll="onCarousellScrolled(this.parentElement, this)">
+        <iframe width="768" height="432" src="https://www.youtube.com/embed/BVN8yvSE38A"
+            title="Hey Neighbor 1 [Trailer] - Minecraft 1.19.4 map" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img width="768" height="432" src="/assets/images/minecraft/hey_neighbor_1.webp" loading="lazy" />
+        <img width="768" height="432" src="/assets/images/minecraft/hey_neighbor_2.webp" loading="lazy" />
+        <img width="768" height="432" src="/assets/images/minecraft/hey_neighbor_3.webp" loading="lazy" />
+        <img width="768" height="432" src="/assets/images/minecraft/hey_neighbor_4.webp" loading="lazy" />
+        <img width="768" height="432" src="/assets/images/minecraft/hey_neighbor_5.webp" loading="lazy" />
+        <img width="768" height="432" src="/assets/images/minecraft/hey_neighbor_6.webp" loading="lazy" />
+    </header>
+    <footer>
+        <button class="mobile-button" onclick="carousellScrollToItem(this.parentElement.parentElement, -1)">
+            <!-- @include ./icons/angle_left.svg -->
+        </button>
+        <div class="carousell_items">
+            <span class="selected" data-id="1"></span>
+            <span data-id="2"></span>
+            <span data-id="3"></span>
+            <span data-id="4"></span>
+            <span data-id="5"></span>
+            <span data-id="6"></span>
+            <span data-id="7"></span>
+        </div>
+        <button class="mobile-button" onclick="carousellScrollToItem(this.parentElement.parentElement, 1)">
+            <!-- @include ./icons/angle_right.svg -->
+        </button>
+    </footer>
+</section>
+<p>
+    CrowScout I is a survival horror stealth Minecraft 1.19.4 map inspired by the Hello Neighbor franchise for two
+    players. You can get it
+    <a href="https://www.planetminecraft.com/project/heyneighbor-1/">on PlanetMinecraft</a>!
+</p>
+<p>
+    It took many months of development, I was in charge of game design, game logic, building the map. I got a lot of
+    help from <b>Taizaii</b>: she built the majority of the interiors.
+</p>
+<p>
+    This map does have some unresolved issues including problems with game design, but I haven't got to fix them.
+</p>
+
+<h2 id="datapacks">Minecraft data packs</h2>
+<p>
+    ...
+</p>
+<!-- /extend -->

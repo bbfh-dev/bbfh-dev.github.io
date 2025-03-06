@@ -16,7 +16,9 @@
   --max-width: 50rem;
 }
 
-#root {
+#root,
+.carousell > header,
+.carousell > footer {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -30,7 +32,8 @@ main > header,
 .grid-2 > article,
 .grid-2 > article > div,
 .sign-warn,
-main > .logo {
+main > .logo,
+.carousell > footer > div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,7 +41,8 @@ main > .logo {
 }
 
 aside > section,
-main {
+main,
+.carousell {
   display: flex;
   flex-direction: column;
   align-items: stretch;
