@@ -11,4 +11,17 @@
         <span class="desktop-only">Index</span>
     </a>
     <!-- /if -->
+
+    <!-- #if filename == "rl_replays.html" -->
+    <a href="/gen/rl_replays.html" class="selected">
+        <!-- @include ../icons/scroll.svg -->
+        <span class="desktop-only">Replay browser</span>
+    </a>
+    <!-- /if -->
+    <!-- #if filename != "rl_replays.html" -->
+    <a href="/gen/rl_replays.html">
+        <!-- @include ../icons/scroll.svg -->
+        <span class="desktop-only">Replay browser</span>
+    </a>
+    <!-- /if -->
 </section>
