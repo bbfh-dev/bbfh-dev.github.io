@@ -5,6 +5,7 @@ build:
 	mend build -s '{"space": "Home", "title": "Website theme", "filename": "theme.html"}' ./src/theme.html > ./docs/theme.html
 
 	mend build -s '{"space": "Generators", "title": "Index", "filename": "index.html"}' ./src/gen/index.html > ./docs/gen/index.html
+	mend build -s '{"space": "Generators", "title": "Replay browser", "filename": "rl_replays.html"}' ./src/gen/rl_replays.html > ./docs/gen/rl_replays.html
 	@echo "Finished building"
 
 watch:
