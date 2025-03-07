@@ -32,14 +32,19 @@ aside > section a,
 main > header,
 .grid-2 > article,
 .grid-2 > article > div,
-.sign-warn,
-.sign-info,
 main > .logo,
 .carousell > footer > div,
 main .row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 0.5rem;
+}
+
+.sign-warn,
+.sign-info {
+  display: inline-flex;
+  flex-direction: row;
   gap: 0.5rem;
 }
 
