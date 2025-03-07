@@ -8,7 +8,7 @@
   }
 }
 
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 60rem) and (min-width: 40rem) {
   :root {
     --aside-width: 4rem;
   }
@@ -19,6 +19,22 @@
 
   aside .desktop-only {
     display: none;
+  }
+
+  aside > div {
+    grid-template-columns: auto;
+  }
+
+  aside > div a {
+    padding: 0.5rem;
+  }
+
+  aside > div a:nth-child(1) {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  aside > div a:nth-child(2) {
+    border-radius: 0 0 0.5rem 0.5rem;
   }
 }
 

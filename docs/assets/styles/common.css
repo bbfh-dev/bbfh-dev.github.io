@@ -29,6 +29,8 @@
 aside > header,
 aside > header a,
 aside > section a,
+.sign-warn,
+.sign-info,
 main > header,
 .grid-2 > article,
 .grid-2 > article > div,
@@ -38,13 +40,6 @@ main .row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.sign-warn,
-.sign-info {
-  display: inline-flex;
-  flex-direction: row;
   gap: 0.5rem;
 }
 

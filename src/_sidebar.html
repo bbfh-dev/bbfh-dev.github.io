@@ -1,0 +1,53 @@
+<section>
+    <!-- #if filename == "index.html" -->
+    <a href="/index.html" class="selected">
+        <!-- @include ./icons/hashtag.svg -->
+        <span class="desktop-only">Index</span>
+    </a>
+    <!-- /if -->
+    <!-- #if filename != "index.html" -->
+    <a href="/index.html">
+        <!-- @include ./icons/hashtag.svg -->
+        <span class="desktop-only">Index</span>
+    </a>
+    <!-- /if -->
+
+    <!-- #if filename == "artwork.html" -->
+    <a href="/artwork.html" class="selected">
+        <!-- @include ./icons/picture.svg -->
+        <span class="desktop-only">Artwork</span>
+    </a>
+    <!-- /if -->
+    <!-- #if filename != "artwork.html" -->
+    <a href="/artwork.html">
+        <!-- @include ./icons/picture.svg -->
+        <span class="desktop-only">Artwork</span>
+    </a>
+    <!-- /if -->
+
+    <!-- #if filename == "minecraft.html" -->
+    <a href="/minecraft.html" class="selected">
+        <!-- @include ./icons/minecraft.svg -->
+        <span class="desktop-only">Minecraft projects</span>
+    </a>
+    <!-- /if -->
+    <!-- #if filename != "minecraft.html" -->
+    <a href="/minecraft.html">
+        <!-- @include ./icons/minecraft.svg -->
+        <span class="desktop-only">Minecraft projects</span>
+    </a>
+    <!-- /if -->
+
+    <!-- #if filename == "theme.html" -->
+    <a href="/theme.html" class="selected">
+        <!-- @include ./icons/palette.svg -->
+        <span class="desktop-only">Website theme</span>
+    </a>
+    <!-- /if -->
+    <!-- #if filename != "theme.html" -->
+    <a href="/theme.html">
+        <!-- @include ./icons/palette.svg -->
+        <span class="desktop-only">Website theme</span>
+    </a>
+    <!-- /if -->
+</section>

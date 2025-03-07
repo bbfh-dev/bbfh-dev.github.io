@@ -6,13 +6,13 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, width=device-width" />
     <meta name="author" content="BubbleFish" />
 
-    <title>Artwork — bbfh.me</title>
+    <title>Artwork @ Home — bbfh.me</title>
     <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: light)" href="/assets/favicon-light.ico">
     <link rel="icon" type="image/x-icon" href="/assets/favicon-dark.ico">
     <link href="/assets/styles/reset.css?version=2" rel="stylesheet" />
-    <link href="/assets/styles/common.css?version=3" rel="stylesheet" />
-    <link href="/assets/styles/theme.css?version=4" rel="stylesheet" />
-    <link href="/assets/styles/responsive.css?version=2" rel="stylesheet" />
+    <link href="/assets/styles/common.css?version=4" rel="stylesheet" />
+    <link href="/assets/styles/theme.css?version=5" rel="stylesheet" />
+    <link href="/assets/styles/responsive.css?version=3" rel="stylesheet" />
     <link href="/assets/styles/font.css?version=1" rel="stylesheet" />
 
     <script src="/assets/scripts/common.js?version=2" defer></script>
@@ -20,190 +20,208 @@
 
 <body>
     <div id="root">
-        <aside>
+    <aside>
+        <header>
+            <img src="/assets/images/bbfh.png" alt="logo" />
+            <a href="/" class="desktop-only">bbfh.me</a>
+            <button class="mobile-button touch-only" onclick="scrollMobile(true)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
+                </svg>
+            </button>
+        </header>
+        <div>
+            <a href="/" title="Home" class="selected">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m8 0.58594-7.707 7.707c-0.39052 0.39052-0.39052 1.0235 0 1.4141 0.39052 0.39052 1.0235 0.39052 1.4141 0l0.29297-0.29297v3.5859c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-3.5859l0.29297 0.29297c0.39052 0.39052 1.0235 0.39052 1.4141 0 0.39052-0.39052 0.39052-1.0235 0-1.4141l-7.707-7.707zm0 2.8281 4 4v5.5859c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-5.5859l4-4z"
+                        fill-rule="evenodd" />
+                </svg>
+            </a>
+    
+            <a href="/gen/" title="Generators">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m7 0a2 2 0 00-2 2h-2c-1.662 0-3 1.338-3 3v8c0 1.662 1.338 3 3 3h8c1.662 0 3-1.338 3-3v-2a2 2 0 002-2 2 2 0 00-2-2v-2c0-1.662-1.338-3-3-3h-2a2 2 0 00-2-2zm-4 4h8c.554 0 1 .446 1 1v8c0 .554-.446 1-1 1h-2a2 2 0 00-2-2 2 2 0 00-2 2h-2c-.554 0-1-.446-1-1v-2a2 2 0 002-2 2 2 0 00-2-2v-2c0-.554.446-1 1-1z"
+                        fill-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <hr />
+        <section>
+            <a href="/index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
+                </svg>
+                <span class="desktop-only">Index</span>
+            </a>
+        
+            <a href="/artwork.html" class="selected">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m4 0c-2.216 0-4 1.784-4 4v8c0 2.216 1.784 4 4 4h8c2.216 0 4-1.784 4-4v-8c0-2.216-1.784-4-4-4h-8zm0 2h8c1.108 0 2 0.892 2 2v8c0 1.108-0.892 2-2 2h-8c-1.108 0-2-0.892-2-2v-8c0-1.108 0.892-2 2-2zm1.5 2c-0.82842 0-1.5 0.67158-1.5 1.5s0.67158 1.5 1.5 1.5 1.5-0.67158 1.5-1.5-0.67158-1.5-1.5-1.5zm4.5 4-1.3496 2-1.9766-1-2.6738 2c0 0.78831 0.57756 1.0762 1 1.0762h6c0.42238 0 1-0.28781 1-1.0762l-2-3z" />
+                </svg>
+                <span class="desktop-only">Artwork</span>
+            </a>
+        
+            <a href="/minecraft.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path
+                     d="M 8,1.9365e-7 C 7.6856673,2.6260432e-4 7.3769327,0.08319698 7.10478,0.24048019 L 1.72738,3.3444802 c -0.5541569,0.3203379 -0.89538977,0.911917 -0.89522,1.552 l 2e-8,6.2079998 c -1.6977e-4,0.640083 0.34106308,1.231662 0.89521998,1.552 l 5.3774,3.104 c 0.5540455,0.319474 1.2363545,0.319474 1.7904,0 l 5.3774,-3.104 c 0.554157,-0.320338 0.89539,-0.911917 0.89522,-1.552 V 4.8964802 c 1.7e-4,-0.640083 -0.341063,-1.2316621 -0.89522,-1.552 L 8.89518,0.24048019 C 8.6230273,0.08319698 8.3142927,2.6260432e-4 7.99996,1.9365e-7 Z M 2.6246,6.0928002 l 4.3407,2.5058 V 13.6102 L 2.6246,11.1044 Z m 10.751,0 V 11.1044 l -4.3407,2.5058 10e-8,-5.0115998 z"
+                     id="path1"
+                     sodipodi:nodetypes="ccccccccccccccccccccccccc" />
+                </svg>
+                <span class="desktop-only">Minecraft projects</span>
+            </a>
+        
+            <a href="/theme.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m8 1a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 1-0.07031 7 7 0 0 0 0.2617-0.05859 1 1 0 0 0 0.668-0.9375 1 1 0 0 0-0.0625-0.334l-1.213-3.639a1 1 0 0 1-0.07617-0.3828 1 1 0 0 1 0.07617-0.3828 1 1 0 0 1 0.2168-0.3242 1 1 0 0 1 0.3242-0.2168 1 1 0 0 1 0.3828-0.07617 1 1 0 0 1 0.1309 0.007812 1 1 0 0 1 0.1191 0.02344l0.1328 0.04492 3.689 1.229a1 1 0 0 0 0.2793 0.04688 1 1 0 0 0 0.9883-0.9023 7 7 0 0 0 0.08203-1.027 7 7 0 0 0-7-7zm-0.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm4 2a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm-7.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm2 4a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5z" />
+                </svg>
+                <span class="desktop-only">Website theme</span>
+            </a>
+        </section>
+    </aside>
+        <main>
             <header>
-                <img src="/assets/images/bbfh.png" alt="logo" />
-                <a href="/" class="desktop-only">bbfh.me</a>
-                <button class="mobile-button touch-only" onclick="scrollMobile(true)">
+                <button class="mobile-button touch-only" onclick="scrollMobile(false)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                         <path
-                            d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
+                            d="m10.708 3.7082c0.39174-0.39173 0.39174-1.0243 0-1.416-0.39174-0.39174-1.0243-0.39174-1.416 0l-5.7051 5.707 5.7051 5.707c0.39174 0.39174 1.0243 0.39174 1.416 0 0.39174-0.39173 0.39174-1.0243 0-1.416l-4.293-4.291z" />
                     </svg>
                 </button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
+                </svg>
+                <span>Artwork</span>
             </header>
-            <section>
-                <a href="/index.html">
+            
+                <hr />
+                <p>
+                    All this artwork was made by me, and is provided under the
+                    <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
+                    license. (You can't sell it, you have to attribute me if you redistrubute it. Free of charge).
+                </p>
+            
+                <h4>Table of contents</h4>
+                <ul>
+                    <li>
+                        <a href="#at-minecraft">Minecraft art</a>
+                    </li>
+                    <li>
+                        <a href="#at-logotypes">Logotypes</a>
+                    </li>
+                </ul>
+            
+                <hr />
+                <h2 id="at-minecraft">Minecraft art</h2>
+                <p>
+                    These were built in Minecraft with all custom models and textures being made by me.
+                    The scenes were setup and rendered in
+                    <a href="https://www.blender.org/">Blender®</a>
+                    Edited in <a href="https://www.gimp.org/">GIMP®</a>.
+                </p>
+            
+                <h4>CrowScout — Detective's room</h4>
+                <img src="/assets/images/artwork/crowscout_alpha1.png" />
+                <p>
+                    In 2024 I was developing a Minecraft adventure map in detective genre. I ended up aborting the project,
+                    and this artwork is all that has come out of it.
+                </p>
+            
+                <h4>Hey Neighbor — Discussing</h4>
+                <img src="/assets/images/artwork/bubble_discussing.png" />
+                <p>
+                    This art was made on my
+                    <a href="https://www.planetminecraft.com/project/heyneighbor-1/">Hey Neighbor I</a>
+                    Minecraft map with 2 characters discussing something.
+                </p>
+            
+                <h4>Rofi</h4>
+                <img src="/assets/images/artwork/rofi.png" />
+                <p>
+                    During a remake of my
+                    <a href="https://modrinth.com/datapack/bubblevehicles">BubbleVehicles</a>
+                    Minecraft datapack I have modeled and textured a car named "Rofi". This is an artwork I made to capture
+                    it.
+                </p>
+            
+                <h4>Bubblellaneous — The couch.</h4>
+                <img src="/assets/images/artwork/bubblellaneous_couch.png" />
+                <p>
+                    Once I released a new version of my
+                    <a href="https://modrinth.com/datapack/bubblellaneous">Bubblellaneous</a>
+                    Minecraft datapack, I made this render of my character laying in a couch.
+                </p>
+            
+                <hr />
+                <h2 id="at-logotypes">Logotypes</h2>
+                <p>
+                    These logos were made in
+                    <a href="https://inkscape.org/">Inkscape®</a> and some of them took months to develop.
+                </p>
+            
+                <h4>My logotype</h4>
+                <div class="logo">
+                    <img src="/assets/images/logos/old_bubblefish.png" width="128px" height="128px" />
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                         <path
-                            d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
+                            d="m4 7c-0.554 0-1 0.446-1 1 0 0.554 0.446 1 1 1h5.5859l-1.293 1.293c-0.39175 0.39172-0.39175 1.0223 0 1.4141s1.0243 0.39172 1.416 0l3.7051-3.707-3.7051-3.707c-0.39175-0.39172-1.0243-0.39172-1.416 0-0.39175 0.39172-0.39175 1.0223 0 1.4141l1.293 1.293z" />
                     </svg>
-                    <span class="desktop-only">Index</span>
-                </a>
-
-                <a href="/artwork.html" class="selected">
+                    <img src="/assets/images/logos/bubblefish.png" width="128px" height="128px" />
+                </div>
+                <p>
+                    It took many iterations, but I'm really happy with it. It depicts a "pufferfish" — my mascot, shaped
+                    like a gear to symbolize technology.
+                </p>
+            
+                <h4>Smithed</h4>
+                <div class="logo">
+                    <img src="/assets/images/logos/old_smithed.png" width="128px" height="128px" />
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                         <path
-                            d="m4 0c-2.216 0-4 1.784-4 4v8c0 2.216 1.784 4 4 4h8c2.216 0 4-1.784 4-4v-8c0-2.216-1.784-4-4-4h-8zm0 2h8c1.108 0 2 0.892 2 2v8c0 1.108-0.892 2-2 2h-8c-1.108 0-2-0.892-2-2v-8c0-1.108 0.892-2 2-2zm1.5 2c-0.82842 0-1.5 0.67158-1.5 1.5s0.67158 1.5 1.5 1.5 1.5-0.67158 1.5-1.5-0.67158-1.5-1.5-1.5zm4.5 4-1.3496 2-1.9766-1-2.6738 2c0 0.78831 0.57756 1.0762 1 1.0762h6c0.42238 0 1-0.28781 1-1.0762l-2-3z" />
+                            d="m4 7c-0.554 0-1 0.446-1 1 0 0.554 0.446 1 1 1h5.5859l-1.293 1.293c-0.39175 0.39172-0.39175 1.0223 0 1.4141s1.0243 0.39172 1.416 0l3.7051-3.707-3.7051-3.707c-0.39175-0.39172-1.0243-0.39172-1.416 0-0.39175 0.39172-0.39175 1.0223 0 1.4141l1.293 1.293z" />
                     </svg>
-                    <span class="desktop-only">Artwork</span>
-                </a>
-
-                <a href="/minecraft.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                      <path
-                         d="M 8,1.9365e-7 C 7.6856673,2.6260432e-4 7.3769327,0.08319698 7.10478,0.24048019 L 1.72738,3.3444802 c -0.5541569,0.3203379 -0.89538977,0.911917 -0.89522,1.552 l 2e-8,6.2079998 c -1.6977e-4,0.640083 0.34106308,1.231662 0.89521998,1.552 l 5.3774,3.104 c 0.5540455,0.319474 1.2363545,0.319474 1.7904,0 l 5.3774,-3.104 c 0.554157,-0.320338 0.89539,-0.911917 0.89522,-1.552 V 4.8964802 c 1.7e-4,-0.640083 -0.341063,-1.2316621 -0.89522,-1.552 L 8.89518,0.24048019 C 8.6230273,0.08319698 8.3142927,2.6260432e-4 7.99996,1.9365e-7 Z M 2.6246,6.0928002 l 4.3407,2.5058 V 13.6102 L 2.6246,11.1044 Z m 10.751,0 V 11.1044 l -4.3407,2.5058 10e-8,-5.0115998 z"
-                         id="path1"
-                         sodipodi:nodetypes="ccccccccccccccccccccccccc" />
-                    </svg>
-                    <span class="desktop-only">Minecraft projects</span>
-                </a>
-
-                <a href="/theme.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path
-                            d="m8 1a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 1-0.07031 7 7 0 0 0 0.2617-0.05859 1 1 0 0 0 0.668-0.9375 1 1 0 0 0-0.0625-0.334l-1.213-3.639a1 1 0 0 1-0.07617-0.3828 1 1 0 0 1 0.07617-0.3828 1 1 0 0 1 0.2168-0.3242 1 1 0 0 1 0.3242-0.2168 1 1 0 0 1 0.3828-0.07617 1 1 0 0 1 0.1309 0.007812 1 1 0 0 1 0.1191 0.02344l0.1328 0.04492 3.689 1.229a1 1 0 0 0 0.2793 0.04688 1 1 0 0 0 0.9883-0.9023 7 7 0 0 0 0.08203-1.027 7 7 0 0 0-7-7zm-0.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm4 2a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm-7.5 1.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5zm2 4a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5z" />
-                    </svg>
-                    <span class="desktop-only">Website theme</span>
-                </a>
-            </section>
-        </aside>
-        <main>
-    <header>
-        <button class="mobile-button touch-only" onclick="scrollMobile(false)">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path
-                    d="m10.708 3.7082c0.39174-0.39173 0.39174-1.0243 0-1.416-0.39174-0.39174-1.0243-0.39174-1.416 0l-5.7051 5.707 5.7051 5.707c0.39174 0.39174 1.0243 0.39174 1.416 0 0.39174-0.39173 0.39174-1.0243 0-1.416l-4.293-4.291z" />
-            </svg>
-        </button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-            <path
-                d="m4 0c-2.216 0-4 1.784-4 4v8c0 2.216 1.784 4 4 4h8c2.216 0 4-1.784 4-4v-8c0-2.216-1.784-4-4-4h-8zm0 2h8c1.108 0 2 0.892 2 2v8c0 1.108-0.892 2-2 2h-8c-1.108 0-2-0.892-2-2v-8c0-1.108 0.892-2 2-2zm1.5 2c-0.82842 0-1.5 0.67158-1.5 1.5s0.67158 1.5 1.5 1.5 1.5-0.67158 1.5-1.5-0.67158-1.5-1.5-1.5zm4.5 4-1.3496 2-1.9766-1-2.6738 2c0 0.78831 0.57756 1.0762 1 1.0762h6c0.42238 0 1-0.28781 1-1.0762l-2-3z" />
-        </svg>
-        <span>Artwork</span>
-    </header>
-        
-        <hr />
-        <p>
-            All this artwork was made by me, and is provided under the
-            <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
-            license. (You can't sell it, you have to attribute me if you redistrubute it. Free of charge).
-        </p>
-        
-        <h4>Table of contents</h4>
-        <ul>
-            <li>
-                <a href="#at-minecraft">Minecraft art</a>
-            </li>
-            <li>
-                <a href="#at-logotypes">Logotypes</a>
-            </li>
-        </ul>
-        
-        <hr />
-        <h2 id="at-minecraft">Minecraft art</h2>
-        <p>
-            These were built in Minecraft with all custom models and textures being made by me.
-            The scenes were setup and rendered in
-            <a href="https://www.blender.org/">Blender®</a>
-            Edited in <a href="https://www.gimp.org/">GIMP®</a>.
-        </p>
-        
-        <h4>CrowScout — Detective's room</h4>
-        <img src="/assets/images/artwork/crowscout_alpha1.png" />
-        <p>
-            In 2024 I was developing a Minecraft adventure map in detective genre. I ended up aborting the project,
-            and this artwork is all that has come out of it.
-        </p>
-        
-        <h4>Hey Neighbor — Discussing</h4>
-        <img src="/assets/images/artwork/bubble_discussing.png" />
-        <p>
-            This art was made on my
-            <a href="https://www.planetminecraft.com/project/heyneighbor-1/">Hey Neighbor I</a>
-            Minecraft map with 2 characters discussing something.
-        </p>
-        
-        <h4>Rofi</h4>
-        <img src="/assets/images/artwork/rofi.png" />
-        <p>
-            During a remake of my
-            <a href="https://modrinth.com/datapack/bubblevehicles">BubbleVehicles</a>
-            Minecraft datapack I have modeled and textured a car named "Rofi". This is an artwork I made to capture
-            it.
-        </p>
-        
-        <h4>Bubblellaneous — The couch.</h4>
-        <img src="/assets/images/artwork/bubblellaneous_couch.png" />
-        <p>
-            Once I released a new version of my
-            <a href="https://modrinth.com/datapack/bubblellaneous">Bubblellaneous</a>
-            Minecraft datapack, I made this render of my character laying in a couch.
-        </p>
-        
-        <hr />
-        <h2 id="at-logotypes">Logotypes</h2>
-        <p>
-            These logos were made in
-            <a href="https://inkscape.org/">Inkscape®</a> and some of them took months to develop.
-        </p>
-        
-        <h4>My logotype</h4>
-        <div class="logo">
-            <img src="/assets/images/logos/old_bubblefish.png" width="128px" height="128px" />
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path
-                    d="m4 7c-0.554 0-1 0.446-1 1 0 0.554 0.446 1 1 1h5.5859l-1.293 1.293c-0.39175 0.39172-0.39175 1.0223 0 1.4141s1.0243 0.39172 1.416 0l3.7051-3.707-3.7051-3.707c-0.39175-0.39172-1.0243-0.39172-1.416 0-0.39175 0.39172-0.39175 1.0223 0 1.4141l1.293 1.293z" />
-            </svg>
-            <img src="/assets/images/logos/bubblefish.png" width="128px" height="128px" />
-        </div>
-        <p>
-            It took many iterations, but I'm really happy with it. It depicts a "pufferfish" — my mascot, shaped
-            like a gear to symbolize technology.
-        </p>
-        
-        <h4>Smithed</h4>
-        <div class="logo">
-            <img src="/assets/images/logos/old_smithed.png" width="128px" height="128px" />
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path
-                    d="m4 7c-0.554 0-1 0.446-1 1 0 0.554 0.446 1 1 1h5.5859l-1.293 1.293c-0.39175 0.39172-0.39175 1.0223 0 1.4141s1.0243 0.39172 1.416 0l3.7051-3.707-3.7051-3.707c-0.39175-0.39172-1.0243-0.39172-1.416 0-0.39175 0.39172-0.39175 1.0223 0 1.4141l1.293 1.293z" />
-            </svg>
-            <img src="/assets/images/logos/smithed.png" width="128px" height="128px" />
-        </div>
-        <p>
-            <a href="https://smithed.net/">Smithed site</a>
-            needed a redesign, and with that, change to the logotype was needed.
-            I'm still not fully happy with it, especially when it's scaled down to 16x16: it stops looking like an
-            anvil, and starts looking like a UFO...
-        </p>
-        
-        <h4>LegionKnights</h4>
-        <div class="logo">
-            <img src="/assets/images/logos/legion_knights.png" width="128px" height="128px" />
-        </div>
-        <p>
-            LegionKnights is a Minecraft PvP clan I was once a part of. This is a logo depicting a knight with a
-            crown. Honestly, one of my favorite ones even though I did not have to cook this hard for just a discord
-            server.
-        </p>
-        
-        <h4>Datapack Hub</h4>
-        <div class="logo">
-            <img src="/assets/images/logos/datapack_hub.png" width="128px" height="128px" />
-        </div>
-        <p>
-            It's not my best work, but I still think it looks good.
-        </p>
-        
-        <h4>Tuxle (Prototype)</h4>
-        <div class="logo">
-            <img src="/assets/images/logos/tuxle.png" width="128px" height="128px" />
-        </div>
-        <p>
-            This is an interesting one, because this is the first time I used AI to get inspiration from. I
-            obviously drew it myself. It was for a project I had in mind, and it's just an app icon.
-        </p>
-        </main>
+                    <img src="/assets/images/logos/smithed.png" width="128px" height="128px" />
+                </div>
+                <p>
+                    <a href="https://smithed.net/">Smithed site</a>
+                    needed a redesign, and with that, change to the logotype was needed.
+                    I'm still not fully happy with it, especially when it's scaled down to 16x16: it stops looking like an
+                    anvil, and starts looking like a UFO...
+                </p>
+            
+                <h4>LegionKnights</h4>
+                <div class="logo">
+                    <img src="/assets/images/logos/legion_knights.png" width="128px" height="128px" />
+                </div>
+                <p>
+                    LegionKnights is a Minecraft PvP clan I was once a part of. This is a logo depicting a knight with a
+                    crown. Honestly, one of my favorite ones even though I did not have to cook this hard for just a discord
+                    server.
+                </p>
+            
+                <h4>Datapack Hub</h4>
+                <div class="logo">
+                    <img src="/assets/images/logos/datapack_hub.png" width="128px" height="128px" />
+                </div>
+                <p>
+                    It's not my best work, but I still think it looks good.
+                </p>
+            
+                <h4>Tuxle (Prototype)</h4>
+                <div class="logo">
+                    <img src="/assets/images/logos/tuxle.png" width="128px" height="128px" />
+                </div>
+                <p>
+                    This is an interesting one, because this is the first time I used AI to get inspiration from. I
+                    obviously drew it myself. It was for a project I had in mind, and it's just an app icon.
+                </p>
+            </main>
     </div>
 </body>
 

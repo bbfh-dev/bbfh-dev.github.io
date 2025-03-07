@@ -1,0 +1,34 @@
+<aside>
+    <header>
+        <img src="/assets/images/bbfh.png" alt="logo" />
+        <a href="/" class="desktop-only">bbfh.me</a>
+        <button class="mobile-button touch-only" onclick="scrollMobile(true)">
+            <!-- @include ./icons/angle_right.svg -->
+        </button>
+    </header>
+    <div>
+        <!-- #if space == "Home" -->
+        <a href="/" title="Home" class="selected">
+            <!-- @include ./icons/home.svg -->
+        </a>
+        <!-- /if -->
+        <!-- #if space != "Home" -->
+        <a href="/" title="Home">
+            <!-- @include ./icons/home.svg -->
+        </a>
+        <!-- /if -->
+
+        <!-- #if space == "Generators" -->
+        <a href="/gen/" title="Generators" class="selected">
+            <!-- @include ./icons/jigsaw.svg -->
+        </a>
+        <!-- /if -->
+        <!-- #if space != "Generators" -->
+        <a href="/gen/" title="Generators">
+            <!-- @include ./icons/jigsaw.svg -->
+        </a>
+        <!-- /if -->
+    </div>
+    <hr />
+    <!-- @slot -->
+</aside>
