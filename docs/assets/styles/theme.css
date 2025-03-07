@@ -321,7 +321,7 @@ main a:focus,
 
 .grid-2 > article span {
   font-weight: 300;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .grid-2 > article > div {
