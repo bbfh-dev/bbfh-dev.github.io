@@ -405,3 +405,90 @@ main a:focus,
 .carousell > footer > div span.selected {
   background-color: var(--theme-foreground);
 }
+
+input[type="file"] {
+  color: inherit;
+}
+
+#replays {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#replays > *:first-child {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+#replays > *:last-child {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#replays > span,
+#replays > section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--theme-section);
+  padding: 0.5rem 1rem;
+  color: var(--theme-shade);
+  gap: 0.5rem;
+}
+
+#replays > section:not(:last-child) {
+  border-bottom: 2px solid var(--theme-shade);
+}
+
+#replays > section > header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--theme-foreground);
+  gap: 0.5rem;
+}
+
+#replays > section > header > *,
+#replays > section > footer {
+  max-height: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#replays > section > header strong {
+  font-weight: 600;
+}
+
+#replays > section > header span {
+  color: var(--theme-shade);
+  margin-left: auto;
+}
+
+#replays > section > footer {
+  font-size: 0.75rem;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#icons > svg {
+  color: var(--theme-foreground);
+  width: 1rem;
+  height: 1rem;
+}
+
+#icons[data-size="24"] > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#icons[data-size="32"] > svg {
+  width: 2rem;
+  height: 2rem;
+}

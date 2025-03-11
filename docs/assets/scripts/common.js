@@ -1,7 +1,6 @@
 const root = document.querySelector("#root");
 
 function scrollMobile(isRight) {
-  console.log(root);
   if (isRight) {
     root.scrollTo({
       left: root.scrollLeftMax,

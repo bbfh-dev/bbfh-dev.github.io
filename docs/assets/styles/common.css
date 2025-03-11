@@ -1,4 +1,5 @@
 :root {
+  --theme-bold: #000000;
   --theme-background: #121212;
   --theme-section: rgba(255, 255, 255, 0.08);
   --theme-border: #333333;

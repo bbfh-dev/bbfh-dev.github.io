@@ -50,4 +50,17 @@
         <span class="desktop-only">Website theme</span>
     </a>
     <!-- /if -->
+
+    <!-- #if filename == "eyecons.html" -->
+    <a href="/eyecons.html" class="selected" title="Eyecons page">
+        <!-- @include ./icons/eyecons.svg -->
+        <span class="desktop-only">Eyecons</span>
+    </a>
+    <!-- /if -->
+    <!-- #if filename != "eyecons.html" -->
+    <a href="/eyecons.html" title="Eyecons page">
+        <!-- @include ./icons/eyecons.svg -->
+        <span class="desktop-only">Eyecons</span>
+    </a>
+    <!-- /if -->
 </section>
