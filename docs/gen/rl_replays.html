@@ -2,129 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
     <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, width=device-width" />
     <meta name="author" content="BubbleFish" />
     <meta name="description" content="My personal website containing my work" />
-
-    <title>Replay browser @ Generators — bbfh.me</title>
-    <link rel="icon" type="image/x-icon" media="(prefers-color-scheme: light)" href="/assets/favicon-light.ico">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-dark.ico">
-    <link href="/assets/styles/reset.css?version=2" rel="stylesheet" />
-    <link href="/assets/styles/common.css?version=4" rel="stylesheet" />
-    <link href="/assets/styles/theme.css?version=6" rel="stylesheet" />
-    <link href="/assets/styles/responsive.css?version=3" rel="stylesheet" />
-    <link href="/assets/styles/font.css?version=1" rel="stylesheet" />
-
-    <script src="/assets/scripts/common.js?version=2" defer></script>
+    <title>
+        Replay browser @ Generators — bbfh.me 
+    </title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-light.ico" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-dark.ico" />
+    <link rel="stylesheet" href="/assets/styles/reset.css?version=2" />
+    <link rel="stylesheet" href="/assets/styles/common.css?version=4" />
+    <link rel="stylesheet" href="/assets/styles/theme.css?version=6" />
+    <link rel="stylesheet" href="/assets/styles/responsive.css?version=3" />
+    <link rel="stylesheet" href="/assets/styles/font.css?version=1" />
+    <script src="/assets/scripts/common.js?version=2" defer>
+    </script>
 </head>
-
 <body>
     <div id="root">
-    <aside>
-        <header>
-            <img src="/assets/images/bbfh.png" alt="logo" />
-            <a href="/" class="desktop-only" title="Home page">bbfh.me</a>
-            <button class="mobile-button touch-only" onclick="scrollMobile(true)" title="Scroll to main view">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path
-                        d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
-                </svg>
-            </button>
-        </header>
-        <div>
-            <a href="/" title="Home">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path
-                        d="m8 0.58594-7.707 7.707c-0.39052 0.39052-0.39052 1.0235 0 1.4141 0.39052 0.39052 1.0235 0.39052 1.4141 0l0.29297-0.29297v3.5859c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-3.5859l0.29297 0.29297c0.39052 0.39052 1.0235 0.39052 1.4141 0 0.39052-0.39052 0.39052-1.0235 0-1.4141l-7.707-7.707zm0 2.8281 4 4v5.5859c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-5.5859l4-4z"
-                        fill-rule="evenodd" />
-                </svg>
-            </a>
-    
-            <a href="/gen/" title="Generators" class="selected">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path
-                        d="m7 0a2 2 0 00-2 2h-2c-1.662 0-3 1.338-3 3v8c0 1.662 1.338 3 3 3h8c1.662 0 3-1.338 3-3v-2a2 2 0 002-2 2 2 0 00-2-2v-2c0-1.662-1.338-3-3-3h-2a2 2 0 00-2-2zm-4 4h8c.554 0 1 .446 1 1v8c0 .554-.446 1-1 1h-2a2 2 0 00-2-2 2 2 0 00-2 2h-2c-.554 0-1-.446-1-1v-2a2 2 0 002-2 2 2 0 00-2-2v-2c0-.554.446-1 1-1z"
-                        fill-rule="evenodd" />
-                </svg>
-            </a>
-        </div>
-        <hr />
-        <section>
-            <a href="/gen/index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path
-                        d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
-                </svg>
-                <span class="desktop-only">Index</span>
-            </a>
-        
-            <a href="/gen/rl_replays.html" class="selected">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path
-                        d="m5.5 3c-.27614 0-.5.22386-.5.5v5.5h5v3.5c0 .27614.22386.5.5.5s.5-.22386.5-.5v-9.5zm8.5 2h-1v-1.5c0-.27614.22386-.5.5-.5s.5.22386.5.5zm-11.5 8c-.27614 0-.5-.22386-.5-.5v-1.5h6v2h-5.5zm.5-9.5c0-1.3807 1.1193-2.5 2.5-2.5h8c1.3807 0 2.5 1.1193 2.5 2.5v3.5h-3v5.5c0 1.3807-1.1193 2.5-2.5 2.5h-8c-1.3807 0-2.5-1.1193-2.5-2.5v-3.5h3v-5.5z"
-                        fill-rule="evenodd" />
-                </svg>
-                <span class="desktop-only">Replay browser</span>
-            </a>
-        </section>
-    </aside>
-        <main>
+        <aside>
             <header>
-                <button class="mobile-button touch-only" onclick="scrollMobile(false)" title="Scroll to sidebar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path
-                            d="m10.708 3.7082c0.39174-0.39173 0.39174-1.0243 0-1.416-0.39174-0.39174-1.0243-0.39174-1.416 0l-5.7051 5.707 5.7051 5.707c0.39174 0.39174 1.0243 0.39174 1.416 0 0.39174-0.39173 0.39174-1.0243 0-1.416l-4.293-4.291z" />
+                <img src="/assets/images/bbfh.png" alt="logo" />
+                <a class="desktop-only" href="/" title="Home page">
+                    bbfh.me 
+                </a>
+                <button class="mobile-button touch-only" title="Scroll to main view" onclick="scrollMobile(true)">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m5.292 12.292c-0.39174 0.39173-0.39174 1.0243 0 1.416 0.39174 0.39174 1.0243 0.39174 1.416 0l5.7051-5.707-5.7051-5.707c-0.39174-0.39174-1.0243-0.39174-1.416 0-0.39174 0.39173-0.39174 1.0243 0 1.416l4.293 4.291z" />
                     </svg>
                 </button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                    <path
-                        d="m5.5 3c-.27614 0-.5.22386-.5.5v5.5h5v3.5c0 .27614.22386.5.5.5s.5-.22386.5-.5v-9.5zm8.5 2h-1v-1.5c0-.27614.22386-.5.5-.5s.5.22386.5.5zm-11.5 8c-.27614 0-.5-.22386-.5-.5v-1.5h6v2h-5.5zm.5-9.5c0-1.3807 1.1193-2.5 2.5-2.5h8c1.3807 0 2.5 1.1193 2.5 2.5v3.5h-3v5.5c0 1.3807-1.1193 2.5-2.5 2.5h-8c-1.3807 0-2.5-1.1193-2.5-2.5v-3.5h3v-5.5z"
-                        fill-rule="evenodd" />
-                </svg>
-                <span>Replay browser</span>
             </header>
-            
-                <hr />
-                <p>
-                    This page allows you to browse your replays in a human-accessible format, useful when you want
-                    to share your replay with someone but are unsure of which file is the correct one.
-                </p>
-                <input type="file" id="upload" accept=".replay" multiple onchange="onUpload(this.files)" />
-                <template id="template-replay-row">
-            
-                </template>
-                <template id="template-replay">
+            <div>
+                <a href="/" title="Home" data-selected="false">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m8 0.58594-7.707 7.707c-0.39052 0.39052-0.39052 1.0235 0 1.4141 0.39052 0.39052 1.0235 0.39052 1.4141 0l0.29297-0.29297v3.5859c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-3.5859l0.29297 0.29297c0.39052 0.39052 1.0235 0.39052 1.4141 0 0.39052-0.39052 0.39052-1.0235 0-1.4141l-7.707-7.707zm0 2.8281 4 4v5.5859c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-5.5859l4-4z" fill-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="/gen/" title="Generators" data-selected="true">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m7 0a2 2 0 00-2 2h-2c-1.662 0-3 1.338-3 3v8c0 1.662 1.338 3 3 3h8c1.662 0 3-1.338 3-3v-2a2 2 0 002-2 2 2 0 00-2-2v-2c0-1.662-1.338-3-3-3h-2a2 2 0 00-2-2zm-4 4h8c.554 0 1 .446 1 1v8c0 .554-.446 1-1 1h-2a2 2 0 00-2-2 2 2 0 00-2 2h-2c-.554 0-1-.446-1-1v-2a2 2 0 002-2 2 2 0 00-2-2v-2c0-.554.446-1 1-1z" fill-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <hr />
+            <section>
+                <a href="/gen/index.html" title="Index page" data-selected="false">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m5-1.6e-8 -0.49998 4h-2.5c-0.554 0-1 0.446-1 1 3e-6 0.554 0.446 1 1 1h2.25l-0.49998 4h-1.75c-0.554 0-1 0.44601-1 1 3e-6 0.554 0.446 1 1 1h1.5l-0.49998 4h2l0.49998-4h4l-0.49998 4h2l0.49998-4h2.5c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-2.25l0.49998-4h1.75c0.554 0 1-0.446 1-1-3e-6 -0.554-0.446-1-1-1h-1.5l0.49998-4h-2l-0.49998 4h-4l0.49998-4zm1.25 6h4l-0.49998 4h-4z" />
+                    </svg>
+                    <span class="desktop-only">
+                        Index 
+                    </span>
+                </a>
+                <a href="/gen/rl_replays.html" title="RocketLeague Replays" data-selected="true">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m5.5 3c-.27614 0-.5.22386-.5.5v5.5h5v3.5c0 .27614.22386.5.5.5s.5-.22386.5-.5v-9.5zm8.5 2h-1v-1.5c0-.27614.22386-.5.5-.5s.5.22386.5.5zm-11.5 8c-.27614 0-.5-.22386-.5-.5v-1.5h6v2h-5.5zm.5-9.5c0-1.3807 1.1193-2.5 2.5-2.5h8c1.3807 0 2.5 1.1193 2.5 2.5v3.5h-3v5.5c0 1.3807-1.1193 2.5-2.5 2.5h-8c-1.3807 0-2.5-1.1193-2.5-2.5v-3.5h3v-5.5z" fill-rule="evenodd" />
+                    </svg>
+                    <span class="desktop-only">
+                        RL Replays 
+                    </span>
+                </a>
+            </section>
+        </aside>
+        <main>
+            <header>
+                <button class="mobile-button touch-only" title="Scroll to sidebar" onclick="scrollMobile(false)">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                        <path d="m10.708 3.7082c0.39174-0.39173 0.39174-1.0243 0-1.416-0.39174-0.39174-1.0243-0.39174-1.416 0l-5.7051 5.707 5.7051 5.707c0.39174 0.39174 1.0243 0.39174 1.416 0 0.39174-0.39173 0.39174-1.0243 0-1.416l-4.293-4.291z" />
+                    </svg>
+                </button>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" fill="currentColor">
+                    <path d="m5.5 3c-.27614 0-.5.22386-.5.5v5.5h5v3.5c0 .27614.22386.5.5.5s.5-.22386.5-.5v-9.5zm8.5 2h-1v-1.5c0-.27614.22386-.5.5-.5s.5.22386.5.5zm-11.5 8c-.27614 0-.5-.22386-.5-.5v-1.5h6v2h-5.5zm.5-9.5c0-1.3807 1.1193-2.5 2.5-2.5h8c1.3807 0 2.5 1.1193 2.5 2.5v3.5h-3v5.5c0 1.3807-1.1193 2.5-2.5 2.5h-8c-1.3807 0-2.5-1.1193-2.5-2.5v-3.5h3v-5.5z" fill-rule="evenodd" />
+                </svg>
+                <span>
+                    Replay browser 
+                </span>
+            </header>
+            <hr />
+            <p>
+                This page allows you to browse your replays in a human-accessible format, useful when you want to share your replay with someone but are unsure of which file is the correct one. 
+            </p>
+            <input id="upload" type="file" accept=".replay" multiple onchange="onUpload(this.files)" />
+            <template id="template-replay-row">
+            </template>
+            <template id="template-replay">
+                <section>
+                    <header>
+                        <a class="mobile-button download-replay" download>
+                            <!-- @include ../icons/popout.svg -->
+                        </a>
+                        <strong>
+                            <q data-insert="name">
+                            </q>
+                        </strong>
+                        <span class="hide-on-phone" data-insert="timestamp" data-call="getDisplayDate">
+                        </span>
+                    </header>
                     <section>
                         <header>
-                            <a class="mobile-button download-replay" download>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                    <path
-                                        d="m5 2c-1.662 0-3 1.338-3 3v6c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-1h-2v1c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1h1v-2h-1zm3 0v2h2.5859l-3.293 3.293a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.293-3.293v2.5859h2v-3c0-1.662-1.338-3-3-3h-3z" />
-                                </svg>
-                            </a>
-                            <strong>
-                                <q data-insert="name"></q>
-                            </strong>
-                            <span class="hide-on-phone" data-insert="timestamp" data-call="getDisplayDate"></span>
+                            <div>
+                                Orange 
+                            </div>
+                            <div>
+                                Blue 
+                            </div>
                         </header>
-                        <section>
-                            <header>
-                                <div>Orange</div>
-                                <div>Blue</div>
-                            </header>
-                            <footer class="replay-players">
-                            </footer>
-                        </section>
-                        <footer data-insert="filename"></footer>
+                        <footer class="replay-players">
+                        </footer>
                     </section>
-                </template>
-                <section id="replays">
+                    <footer data-insert="filename">
+                    </footer>
                 </section>
-            </main>
-            
-            <script src="https://momentjs.com/downloads/moment.min.js"></script>
-            <script src="/assets/page/rl_replays/script.js?version=1" defer></script>
+            </template>
+            <section id="replays">
+            </section>
+        </main>
+        <script src="https://momentjs.com/downloads/moment.min.js">
+        </script>
+        <script src="/assets/page/rl_replays/script.js?version=1" defer>
+        </script>
     </div>
 </body>
 
