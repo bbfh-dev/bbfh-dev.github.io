@@ -1,27 +1,11 @@
 <section>
-    <!-- #if filename == "index.html" -->
-    <a href="/gen/index.html" class="selected">
-        <!-- @include ../icons/hashtag.svg -->
+    <a href="/gen/index.html" title="Index page" data-selected="{{ ^.filename == index.html }}">
+        <mend:include src="../icons/hashtag.svg" />
         <span class="desktop-only">Index</span>
     </a>
-    <!-- /if -->
-    <!-- #if filename != "index.html" -->
-    <a href="/gen/index.html">
-        <!-- @include ../icons/hashtag.svg -->
-        <span class="desktop-only">Index</span>
-    </a>
-    <!-- /if -->
 
-    <!-- #if filename == "rl_replays.html" -->
-    <a href="/gen/rl_replays.html" class="selected">
-        <!-- @include ../icons/scroll.svg -->
-        <span class="desktop-only">Replay browser</span>
+    <a href="/gen/rl_replays.html" title="RocketLeague Replays" data-selected="{{ ^.filename == rl_replays.html }}">
+        <mend:include src="../icons/scroll.svg" />
+        <span class="desktop-only">RL Replays</span>
     </a>
-    <!-- /if -->
-    <!-- #if filename != "rl_replays.html" -->
-    <a href="/gen/rl_replays.html">
-        <!-- @include ../icons/scroll.svg -->
-        <span class="desktop-only">Replay browser</span>
-    </a>
-    <!-- /if -->
 </section>

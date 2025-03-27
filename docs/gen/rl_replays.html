@@ -12,7 +12,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon-dark.ico">
     <link href="/assets/styles/reset.css?version=2" rel="stylesheet" />
     <link href="/assets/styles/common.css?version=4" rel="stylesheet" />
-    <link href="/assets/styles/theme.css?version=5" rel="stylesheet" />
+    <link href="/assets/styles/theme.css?version=6" rel="stylesheet" />
     <link href="/assets/styles/responsive.css?version=3" rel="stylesheet" />
     <link href="/assets/styles/font.css?version=1" rel="stylesheet" />
 
@@ -87,10 +87,44 @@
             
                 <hr />
                 <p>
-                    This page allows you to browse your replays in a human-accessible format, useful for statistics or when you want
+                    This page allows you to browse your replays in a human-accessible format, useful when you want
                     to share your replay with someone but are unsure of which file is the correct one.
                 </p>
+                <input type="file" id="upload" accept=".replay" multiple onchange="onUpload(this.files)" />
+                <template id="template-replay-row">
+            
+                </template>
+                <template id="template-replay">
+                    <section>
+                        <header>
+                            <a class="mobile-button download-replay" download>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path
+                                        d="m5 2c-1.662 0-3 1.338-3 3v6c0 1.662 1.338 3 3 3h6c1.662 0 3-1.338 3-3v-1h-2v1c0 0.554-0.446 1-1 1h-6c-0.554 0-1-0.446-1-1v-6c0-0.554 0.446-1 1-1h1v-2h-1zm3 0v2h2.5859l-3.293 3.293a1 1 0 0 0 0 1.4141 1 1 0 0 0 1.4141 0l3.293-3.293v2.5859h2v-3c0-1.662-1.338-3-3-3h-3z" />
+                                </svg>
+                            </a>
+                            <strong>
+                                <q data-insert="name"></q>
+                            </strong>
+                            <span class="hide-on-phone" data-insert="timestamp" data-call="getDisplayDate"></span>
+                        </header>
+                        <section>
+                            <header>
+                                <div>Orange</div>
+                                <div>Blue</div>
+                            </header>
+                            <footer class="replay-players">
+                            </footer>
+                        </section>
+                        <footer data-insert="filename"></footer>
+                    </section>
+                </template>
+                <section id="replays">
+                </section>
             </main>
+            
+            <script src="https://momentjs.com/downloads/moment.min.js"></script>
+            <script src="/assets/page/rl_replays/script.js?version=1" defer></script>
     </div>
 </body>
 

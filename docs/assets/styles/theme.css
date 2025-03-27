@@ -98,6 +98,7 @@ aside > section a {
 }
 
 aside > section a.selected,
+aside > section a[data-selected="true"],
 aside > section a:hover {
   background-color: var(--theme-section);
 }
@@ -135,6 +136,7 @@ aside > div a:nth-child(2) {
 }
 
 aside > div a.selected,
+aside > div a[data-selected="true"],
 aside > div a:hover,
 aside > div a:focus {
   color: var(--theme-foreground);

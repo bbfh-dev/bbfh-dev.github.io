@@ -1,21 +1,22 @@
-<!-- #extend ./_root.html -->
-<!-- #extend ./_local.html -->
-<!-- @include ./_sidebar.html -->
-<!-- /extend -->
-<main>
-    <!-- #extend ./_header.html -->
-    <!-- @include ./icons/hashtag.svg -->
-    <!-- /extend -->
+<mend:extend src="_root.html">
+    <mend:extend src="_local.html">
+        <mend:include src="_sidebar.html" />
+    </mend:extend>
 
-    <hr />
-    <div class="sign-warn">
-        <!-- @include ./icons/warning.svg -->
-        <span>This page is under development!</span>
-    </div>
-    <p>
-        This page demonstrates all of the styles that this site's theme is capable of displaying and how they
-        looks like. I designed this to be universal design for all of my projects, it was inspired by
-        <a href="https://www.gtk.org/">GTK4</a>.
-    </p>
-</main>
-<!-- /extend -->
+    <main>
+        <mend:extend src="_header.html">
+            <mend:include src="./icons/hashtag.svg" />
+        </mend:extend>
+
+        <hr />
+        <div class="sign-warn">
+            <mend:include src="./icons/warning.svg" />
+            <span>This page is under development!</span>
+        </div>
+        <p>
+            This page demonstrates all of the styles that this site's theme is capable of displaying and how they
+            looks like. I designed this to be universal design for all of my projects, it was inspired by
+            <a href="https://www.gtk.org/">GTK4</a>.
+        </p>
+    </main>
+</mend:extend>

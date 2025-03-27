@@ -3,32 +3,18 @@
         <img src="/assets/images/bbfh.png" alt="logo" />
         <a href="/" class="desktop-only" title="Home page">bbfh.me</a>
         <button class="mobile-button touch-only" onclick="scrollMobile(true)" title="Scroll to main view">
-            <!-- @include ./icons/angle_right.svg -->
+            <mend:include src="./icons/angle_right.svg" />
         </button>
     </header>
     <div>
-        <!-- #if space == "Home" -->
-        <a href="/" title="Home" class="selected">
-            <!-- @include ./icons/home.svg -->
+        <a href="/" title="Home" data-selected="{{ ^.space == Home }}">
+            <mend:include src="./icons/home.svg" />
         </a>
-        <!-- /if -->
-        <!-- #if space != "Home" -->
-        <a href="/" title="Home">
-            <!-- @include ./icons/home.svg -->
-        </a>
-        <!-- /if -->
 
-        <!-- #if space == "Generators" -->
-        <a href="/gen/" title="Generators" class="selected">
-            <!-- @include ./icons/jigsaw.svg -->
+        <a href="/gen/" title="Generators" data-selected="{{ ^.space == Generators }}">
+            <mend:include src="./icons/jigsaw.svg" />
         </a>
-        <!-- /if -->
-        <!-- #if space != "Generators" -->
-        <a href="/gen/" title="Generators">
-            <!-- @include ./icons/jigsaw.svg -->
-        </a>
-        <!-- /if -->
     </div>
     <hr />
-    <!-- @slot -->
+    <mend:slot />
 </aside>
