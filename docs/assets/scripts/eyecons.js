@@ -3,7 +3,7 @@
  * @returns {string[]}
  */
 async function GetIndex(path) {
-	const response = await fetch(`${path}/.index`);
+	const response = await fetch(`${path}/INDEX`);
 	const body = await response.text();
 	return body.split("\n").filter((value) => value);
 }
@@ -27,7 +27,7 @@ GetIndex("/assets/images/eyecons_pixelart").then((filenames) => {
 	}
 });
 
-GetHTML("/assets/images/eyecons/.all.svg").then((body) => {
+GetHTML("/assets/images/eyecons/ALL").then((body) => {
 	document.getElementById("eyecons").innerHTML = body;
 });
 

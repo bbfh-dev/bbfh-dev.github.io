@@ -10,7 +10,7 @@ rm -rf ./docs/assets/images/eyecons_pixelart/
 mv /tmp/eyecons/symbolic/web/ ./docs/assets/images/eyecons/
 mv /tmp/eyecons/raster/pixelart/64x64/ ./docs/assets/images/eyecons_pixelart/
 
-ls ./docs/assets/images/eyecons_pixelart/ > ./docs/assets/images/eyecons_pixelart/.index
-ls ./docs/assets/images/eyecons/ > ./docs/assets/images/eyecons/.index
+ls ./docs/assets/images/eyecons_pixelart/ > ./docs/assets/images/eyecons_pixelart/INDEX
+ls ./docs/assets/images/eyecons/ > ./docs/assets/images/eyecons/INDEX
 
-cat ./docs/assets/images/eyecons/*.svg > ./docs/assets/images/eyecons/.all.svg
+cat ./docs/assets/images/eyecons/*.svg > ./docs/assets/images/eyecons/ALL
