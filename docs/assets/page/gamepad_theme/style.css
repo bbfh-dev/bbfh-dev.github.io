@@ -1,0 +1,98 @@
+.controller.ds4 {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/base.svg");
+}
+
+.ds4.disconnected {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/disconnected.svg");
+}
+
+.ds4 .trigger {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/triggers.svg");
+}
+
+.ds4 .bumper {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/bumper.svg") no-repeat;
+}
+
+.ds4 .touchpad.pressed {
+	background: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/touchpad.svgz) no-repeat center;
+}
+
+.ds4 .meta.pressed {
+	background: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/meta.svgz) no-repeat center;
+}
+
+.ds4 .back,
+.ds4 .start {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/start.svg");
+}
+
+.ds4 .button {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/face.svg");
+	background-position: 0 0;
+}
+
+.ds4 .button.a {
+	background-position: 0 0;
+}
+
+.ds4 .button.b {
+	background-position: -57px 0;
+}
+
+.ds4 .button.x {
+	background-position: -113px 0;
+}
+
+.ds4 .button.y {
+	background-position: 55px 0;
+}
+
+.ds4 .button.pressed {
+	background-position-y: 55px;
+}
+
+.ds4 .stick {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/sticks.svg");
+}
+
+.ds4 .face {
+	background: url("https://bbfh.me/assets/page/gamepad_theme/dpad.svg");
+}
+
+/* .controller.ds4.white { */
+/* 	background-image: url("./base.svg"); */
+/* } */
+/**/
+/* .ds4.white.disconnected { */
+/* 	background: url("./disconnected.svg"); */
+/* } */
+/**/
+/* .ds4.white .trigger { */
+/* 	background-image: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/triggers.svgz); */
+/* } */
+/**/
+/* .ds4.white .bumper { */
+/* 	background-image: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/bumper.svgz); */
+/* } */
+/**/
+/* .ds4.white .touchpad.pressed { */
+/* 	background-image: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/touchpad.svgz); */
+/* } */
+/**/
+/* .ds4.white .back, */
+/* .ds4 .start { */
+/* 	background-image: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/start.svgz); */
+/* } */
+/**/
+/* .ds4.white .button { */
+/* 	background-image: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/face.svgz); */
+/* } */
+/**/
+/* .ds4.white .stick { */
+/* 	background-image: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/sticks.svgz); */
+/* } */
+/**/
+/* .ds4.white .face { */
+/* 	background-image: url(https://lethalmaus.github.io/GamepadViewerSkins/jjegel/dpad.svgz); */
+/* } */
