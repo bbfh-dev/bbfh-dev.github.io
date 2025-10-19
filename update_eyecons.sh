@@ -1,16 +1,19 @@
-LOCATION=$(curl -s https://api.github.com/repos/bbfh-dev/eyecons/releases/latest | jq -r '.assets.[0].browser_download_url')
-echo $LOCATION
-curl -L -o /tmp/eyecons.tar.gz $LOCATION
-rm -rf /tmp/eyecons/
-mkdir -p /tmp/eyecons/
-tar -xzf /tmp/eyecons.tar.gz -C /tmp/eyecons/
+EYECONS_DIR=/tmp/eyecons
 
-rm -rf ./docs/assets/images/eyecons/
-rm -rf ./docs/assets/images/eyecons_pixelart/
-mv /tmp/eyecons/symbolic/web/ ./docs/assets/images/eyecons/
-mv /tmp/eyecons/raster/pixelart/64x64/ ./docs/assets/images/eyecons_pixelart/
+# LOCATION=$(curl -s https://api.github.com/repos/bbfh-dev/eyecons/releases/latest | jq -r '.assets.[0].browser_download_url')
+# echo $LOCATION
+# curl -L -o /tmp/eyecons.tar.gz $LOCATION
+# rm -rf $EYECONS_DIR
+# mkdir -p $EYECONS_DIR
+# tar -xzf /tmp/eyecons.tar.gz -C $EYECONS_DIR
+# ls $EYECONS_DIR/symbolic/web/ > $EYECONS_DIR/INDEX
 
-ls ./docs/assets/images/eyecons_pixelart/ > ./docs/assets/images/eyecons_pixelart/INDEX
-ls ./docs/assets/images/eyecons/ > ./docs/assets/images/eyecons/INDEX
+echo "" > ./src/gen/__eyecons.html
+for file in ${EYECONS_DIR}/symbolic/web/*; do
+    name=$(basename $file)
+    name=${name%.svg}
 
-cat ./docs/assets/images/eyecons/*.svg > ./docs/assets/images/eyecons/ALL
+    echo '<button class="eyecons-icon" onclick="downloadIcon(this)" title="Click to copy HTML">' >> ./src/gen/__eyecons.html
+    cat ${EYECONS_DIR}/symbolic/web/${name}.svg >> ./src/gen/__eyecons.html
+    echo '</button>' >> ./src/gen/__eyecons.html
+done
