@@ -18,6 +18,7 @@ for file in ${EYECONS_DIR}/symbolic/web/*; do
     echo '</button>' >> ./src/gen/__eyecons.html
 done
 
+make build
 git add .
 git commit -m "chore: Update eyecons"
 git push origin main
