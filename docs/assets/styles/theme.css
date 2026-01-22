@@ -539,3 +539,9 @@ input[type="file"] {
 	border-radius: 1rem;
 	color: var(--palette-green);
 }
+
+#minecraft_characters {
+	font-family: "Minecraft";
+	font-size: 1.5rem;
+	color: var(--theme-foreground);
+}
