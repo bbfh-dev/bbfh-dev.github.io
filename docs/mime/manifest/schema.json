@@ -1,0 +1,40 @@
+{
+	"type": "object",
+	"required": [
+		"type"
+	],
+	"properties": {
+		"type": {
+			"type": "string",
+			"enum": [
+				"generate",
+				"inline"
+			]
+		},
+		"iterators": {
+			"type": "object",
+			"patternProperties": {
+				"^[a-z_]+$": {
+					"type": "array",
+					"items": {
+						"type": [
+							"array",
+							"string"
+						],
+						"minItems": 1,
+						"items": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		},
+		"arguments": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		}
+	},
+	"additionalProperties": false
+}
