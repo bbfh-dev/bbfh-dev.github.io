@@ -1,0 +1,33 @@
+@media only screen and (max-width: 82rem) {
+	#root {
+		justify-content: start;
+	}
+
+	main {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 60rem) and (min-width: 40rem) {
+	:root {
+		--sidebar-width: 4rem;
+	}
+
+	#root {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 40rem) {
+	#root {
+		justify-content: start;
+	}
+
+	aside {
+		min-width: 100vw;
+	}
+
+	main {
+		min-width: calc(100vw - 2rem);
+	}
+}

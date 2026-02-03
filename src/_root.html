@@ -1,0 +1,26 @@
+<mend:extend src="std:root">
+
+	<head>
+		<mend:include src="std:meta" />
+		<meta name="author" content="BubbleFish" />
+		<meta name="description" content="My personal website containing my work" />
+
+		<title>[[ .title ]] @ [[ .space ]] — bbfh.me</title>
+		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+		<link href="/assets/styles/01_reset.min.css?checksum=[[ ^.checksums.style_reset ]]" rel="stylesheet" />
+		<link href="/assets/styles/02_fonts.min.css?checksum=[[ ^.checksums.style_fonts ]]" rel="stylesheet" />
+		<link href="/assets/styles/03_utils.min.css?checksum=[[ ^.checksums.style_utils ]]" rel="stylesheet" />
+		<link href="/assets/styles/50_main.min.css?checksum=[[ ^.checksums.style_main ]]" rel="stylesheet" />
+		<link href="/assets/styles/51_shared.min.css?checksum=[[ ^.checksums.style_shared ]]" rel="stylesheet" />
+		<link href="/assets/styles/99_responsive.min.css?checksum=[[ ^.checksums.style_responsive ]]" rel="stylesheet" />
+
+		<script src="/assets/scripts/index.js?checksum=[[ ^.checksums.script_index ]]" defer></script>
+	</head>
+
+	<body>
+		<div id="root">
+			<mend:slot />
+		</div>
+	</body>
+
+</mend:extend>
