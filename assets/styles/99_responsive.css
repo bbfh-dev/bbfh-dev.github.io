@@ -8,7 +8,7 @@
 	}
 }
 
-@media only screen and (max-width: 60rem) and (min-width: 40rem) {
+@media only screen and (max-width: 70rem) and (min-width: 40rem) {
 	:root {
 		--sidebar-width: 4rem;
 	}
@@ -19,6 +19,10 @@
 
 	aside .--desktop-only {
 		display: none !important;
+	}
+
+	aside header {
+		padding-left: 0;
 	}
 
 	aside header,
@@ -39,5 +43,9 @@
 	aside,
 	main {
 		min-width: calc(100vw - 2rem);
+	}
+
+	.navigation-button {
+		display: flex;
 	}
 }

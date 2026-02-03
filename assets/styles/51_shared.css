@@ -18,6 +18,11 @@ main {
 	align-items: stretch;
 }
 
+.navigation-button {
+	align-items: center;
+	justify-content: center;
+}
+
 a:hover,
 aside header a:hover {
 	text-decoration: underline;
@@ -28,6 +33,7 @@ aside header a:hover {
 a:focus,
 a.--selected,
 aside header a:focus,
-aside header a.--selected {
+aside header a.--selected,
+.navigation-button:focus {
 	color: var(--fg-orange-bright);
 }

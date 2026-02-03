@@ -1,6 +1,7 @@
 :root {
 	--bg-black: #000000;
 	--bg-black-bright: #121212;
+	--bg-highlight: rgba(255, 255, 255, 0.1);
 
 	--fg-white: #e0e0e0;
 	--fg-white-bright: #ffffff;
@@ -70,6 +71,7 @@ aside {
 aside header {
 	gap: 1rem;
 	margin-bottom: 1rem;
+	padding-left: 1rem;
 }
 
 aside header img {
@@ -84,6 +86,7 @@ aside header a {
 	font-size: 1.5rem;
 	color: var(--fg-white-bright);
 	text-decoration: none;
+	margin-right: auto;
 }
 
 aside hr {
@@ -121,6 +124,10 @@ aside > a .icon:first-child {
 aside > a.--selected,
 aside > a:hover {
 	background-color: var(--bg-black-bright);
+
+	.icon:first-child {
+		opacity: 1;
+	}
 }
 
 aside h2 {
@@ -144,4 +151,19 @@ main {
 	padding: 1rem;
 	gap: 1rem;
 	overflow-y: auto;
+}
+
+.navigation-button {
+	background-color: transparent;
+	border: none;
+	border-radius: 1rem;
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+	color: inherit;
+	display: none;
+}
+
+.navigation-button:hover {
+	background-color: var(--bg-highlight);
 }
