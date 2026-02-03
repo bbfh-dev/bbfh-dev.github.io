@@ -3,6 +3,7 @@
 rm -rf ./_site
 mkdir -p ./_site
 cp ./src/robots.txt ./_site/.
+cp ./src/CNAME ./_site/.
 
 # Assets
 cp -r ./assets ./_site/.
