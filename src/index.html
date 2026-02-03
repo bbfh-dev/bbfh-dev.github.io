@@ -1,122 +1,11 @@
-<mend:extend src="_root.html" :title="Index" :space="Home">
-	<aside>
-		<header>
-			<img src="/assets/images/logo.svg" alt="website icon" />
-			<a href="/" class="--desktop-only">bbfh.me</a>
-			<button onclick="scrollOnMobile(true);" class="navigation-button">
-				<mend:include src="icons/navigation_angle_right.svg" />
-			</button>
-		</header>
-		<a href="" class="--selected" title="Index">
-			<mend:include src="icons/hashtag.svg" />
-			<span class="--desktop-only">Index</span>
-		</a>
-		<a href="" title="Artwork">
-			<mend:include src="icons/picture.svg" />
-			<span class="--desktop-only">Artwork</span>
-		</a>
-
-		<hr />
-
-		<h2 class="--desktop-only">Projects:</h2>
-		<a href="https://github.com/bbfh-dev/eyecons" title="Eyecons" class="category-projects">
-			<mend:include src="icons/logo_eyecons.svg" />
-			<span class="--desktop-only">Eyecons</span>
-			<mend:include src="icons/popout.svg" class="--desktop-only" />
-		</a>
-		<a href="https://github.com/tomefile" title="Tomefile" class="category-projects">
-			<mend:include src="icons/logo_eyecons.svg" />
-			<span class="--desktop-only">Tomefile</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-		<a href="https://github.com/bbfh-dev/mime" title="Mime" class="category-projects">
-			<mend:include src="icons/gear.svg" />
-			<span class="--desktop-only">Mime</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-		<a href="https://github.com/bbfh-dev/mend" title="Mend" class="category-projects">
-			<mend:include src="icons/neutral.svg" />
-			<span class="--desktop-only">Mend</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-		<a href="https://github.com/bbfh-dev/tree-sitter-mcfunction" title="Tree-sitter MCFunction" class="category-projects">
-			<mend:include src="icons/diagram.svg" />
-			<span class="--desktop-only">Tree-sitter MCFunction</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-
-		<hr />
-
-		<h2 class="--desktop-only">Libraries:</h2>
-		<a href="https://github.com/bbfh-dev/lib-parsex" title="Parsex" class="category-misc">
-			<mend:include src="icons/box.svg" />
-			<span class="--desktop-only">Parsex</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-
-		<hr />
-
-		<h2 class="--desktop-only">Scripts:</h2>
-		<a href="https://github.com/bbfh-dev/goto.sh" title="GoTo" class="category-misc">
-			<mend:include src="icons/text.svg" />
-			<span class="--desktop-only">GoTo</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-
-		<hr />
-
-		<h2 class="--desktop-only">Minecraft Maps:</h2>
-		<a href="" title="CrowScout II (WIP)" class="category-minecraft">
-			<mend:include src="icons/shape_star-fill.svg" />
-			<span class="--desktop-only">CrowScout II (WIP)</span>
-		</a>
-		<a href="https://www.planetminecraft.com/project/heyneighbor-1/" title="CrowScout I" class="category-minecraft">
-			<mend:include src="icons/box.svg" />
-			<span class="--desktop-only">CrowScout I</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-		<a href="" title="Hey Neighbor" class="category-minecraft">
-			<mend:include src="icons/folder-crossed.svg" />
-			<span class="--desktop-only">Hey Neighbor</span>
-		</a>
-		<a href="" title="Hello Neighbor 2.1" class="category-minecraft">
-			<mend:include src="icons/folder-crossed.svg" />
-			<span class="--desktop-only">Hello Neighbor 2.1</span>
-		</a>
-		<a href="" title="Hello BAV I Duo" class="category-minecraft">
-			<mend:include src="icons/folder-crossed.svg" />
-			<span class="--desktop-only">Hello BAV I Duo</span>
-		</a>
-
-		<hr />
-
-		<h2 class="--desktop-only">Minecraft Packs:</h2>
-		<a href="" title="Bubblellaneous" class="category-minecraft">
-			<mend:include src="icons/folder_zip.svg" />
-			<span class="--desktop-only">Bubblellaneous</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-		<a href="" title="BubbleVehicles" class="category-minecraft">
-			<mend:include src="icons/folder_zip.svg" />
-			<span class="--desktop-only">BubbleVehicles</span>
-			<mend:include src="icons/popout.svg" />
-		</a>
-
-		<hr />
-
-		<h2 class="--desktop-only">Utilities:</h2>
-		<a href="" title="Bubblellaneous" class="category-util">
-			<mend:include src="icons/symbol_font.svg" />
-			<span class="--desktop-only">Minecraft Unicode</span>
-		</a>
-	</aside>
+<pkg:root :title="Index" :space="Home">
 	<main>
 		<header>
 			<button onclick="scrollOnMobile(false);" class="navigation-button">
-				<mend:include src="icons/navigation_angle_left.svg" />
+				<mend:include :src="components/icons/navigation_angle_left.svg" />
 			</button>
 			<span>
-				<mend:include src="icons/hashtag.svg" />
+				<mend:include :src="components/icons/hashtag.svg" />
 				<span>Index</span>
 			</span>
 		</header>
@@ -170,4 +59,4 @@
 			Feel free to message me on discord <span class="code">@bbfh</span> or send a pigeon my way <a href="mailto:daforsastudia@gmail.com">daforsastudia@gmail.com</a>!
 		</p>
 	</main>
-</mend:extend>
+</pkg:root>

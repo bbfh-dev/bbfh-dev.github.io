@@ -38,7 +38,7 @@ jobs:
               run: sudo apt-get update && sudo apt-get -y install esbuild
 
             - name: Install Mend
-              run: go install github.com/bbfh-dev/mend@latest
+              run: go install github.com/bbfh-dev/mend@v1.0.1-alpha.4
 
             - name: Build with Mend
               run: ./build.sh

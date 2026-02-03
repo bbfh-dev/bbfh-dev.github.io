@@ -1,0 +1,85 @@
+<aside>
+	<header>
+		<img src="/assets/images/logo.svg" alt="website icon" />
+		<a href="/" class="--desktop-only">bbfh.me</a>
+		<button onclick="scrollOnMobile(true);" class="navigation-button">
+			<mend:include :src="icons/navigation_angle_right.svg" />
+		</button>
+	</header>
+
+	<pkg:sidebar-button :title="Index" data-selected="[[ this.title == 'Index' ]]" href="">
+		<mend:include :src="icons/hashtag.svg" />
+	</pkg:sidebar-button>
+	<pkg:sidebar-button :title="Artwork" data-selected="[[ this.title == 'Artwork' ]]" href="">
+		<mend:include :src="icons/picture.svg" />
+	</pkg:sidebar-button>
+
+	<hr />
+
+	<h2 class="--desktop-only">Projects:</h2>
+	<pkg:sidebar-button-link :title="Eyecons" href="https://github.com/bbfh-dev/eyecons" class="category-projects">
+		<mend:include :src="icons/logo_eyecons.svg" />
+	</pkg:sidebar-button-link>
+	<pkg:sidebar-button-link :title="Tomefile" href="https://github.com/tomefile" class="category-projects">
+		<mend:include :src="icons/scroll.svg" />
+	</pkg:sidebar-button-link>
+	<pkg:sidebar-button-link :title="Mime" href="https://github.com/bbfh-dev/mime" class="category-projects">
+		<mend:include :src="icons/gear.svg" />
+	</pkg:sidebar-button-link>
+	<pkg:sidebar-button-link :title="Mend" href="https://github.com/bbfh-dev/mend" class="category-projects">
+		<mend:include :src="icons/neutral.svg" />
+	</pkg:sidebar-button-link>
+	<pkg:sidebar-button-link :title="Tree-sitter MCFunction" href="https://github.com/bbfh-dev/tree-sitter-mcfunction" class="category-projects">
+		<mend:include :src="icons/diagram.svg" />
+	</pkg:sidebar-button-link>
+
+	<hr />
+
+	<h2 class="--desktop-only">Libraries:</h2>
+	<pkg:sidebar-button-link :title="Parsex" href="https://github.com/bbfh-dev/lib-parsex" class="category-misc">
+		<mend:include :src="icons/box.svg" />
+	</pkg:sidebar-button-link>
+
+	<hr />
+
+	<h2 class="--desktop-only">Scripts:</h2>
+	<pkg:sidebar-button-link :title="GoTo" href="https://github.com/bbfh-dev/goto.sh" class="category-misc">
+		<mend:include :src="icons/text.svg" />
+	</pkg:sidebar-button-link>
+
+	<hr />
+
+	<h2 class="--desktop-only">Minecraft Maps:</h2>
+	<pkg:sidebar-button :title="CrowScout II (WIP)" data-selected="[[ this.title == 'CrowScout II (WIP)' ]]" href="" class="category-minecraft">
+		<mend:include :src="icons/shape_star-fill.svg" />
+	</pkg:sidebar-button>
+	<pkg:sidebar-button-link :title="CrowScout I" href="https://www.planetminecraft.com/project/heyneighbor-1/" class="category-minecraft">
+		<mend:include :src="icons/box.svg" />
+	</pkg:sidebar-button-link>
+	<pkg:sidebar-button :title="Hey Neighbor" data-selected="[[ this.title == 'Hey Neighbor' ]]" href="" class="category-minecraft">
+		<mend:include :src="icons/folder-crossed.svg" />
+	</pkg:sidebar-button>
+	<pkg:sidebar-button :title="Hello Neighbor 2.1" data-selected="[[ this.title == 'Hello Neighbor 2.1' ]]" href="" class="category-minecraft">
+		<mend:include :src="icons/folder-crossed.svg" />
+	</pkg:sidebar-button>
+	<pkg:sidebar-button :title="Hello BAV I Duo" data-selected="[[ this.title == 'Hello BAV I Duo' ]]" href="" class="category-minecraft">
+		<mend:include :src="icons/folder-crossed.svg" />
+	</pkg:sidebar-button>
+
+	<hr />
+
+	<h2 class="--desktop-only">Minecraft Packs:</h2>
+	<pkg:sidebar-button-link :title="Bubblellaneous" href="https://modrinth.com/datapack/bubblellaneous" class="category-minecraft">
+		<mend:include :src="icons/folder_zip.svg" />
+	</pkg:sidebar-button-link>
+	<pkg:sidebar-button-link :title="BubbleVehicles" href="https://modrinth.com/datapack/bubblevehicles" class="category-minecraft">
+		<mend:include :src="icons/folder_zip.svg" />
+	</pkg:sidebar-button-link>
+
+	<hr />
+
+	<h2 class="--desktop-only">Utilities:</h2>
+	<pkg:sidebar-button :title="Minecraft Unicode" data-selected="[[ this.title == 'Minecraft Unicode' ]]" href="" class="category-util">
+		<mend:include :src="icons/symbol_font.svg" />
+	</pkg:sidebar-button>
+</aside>

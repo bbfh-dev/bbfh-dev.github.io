@@ -17,12 +17,12 @@ get_checksum() {
 	sha256sum $file | cut -d ' ' -f1
 }
 
-input='{}'
+input='debug=true'
 
 set_checksum() {
 	name=$1
 	file=$2
-	echo $input | jq -M ".checksums.$1 |= \"$(get_checksum $2)\""
+	printf "%s,checksums.%s=%s" $input $1 "$(get_checksum $2)"
 }
 
 input=$(set_checksum "style_reset" ./_site/assets/styles/01_reset.min.css)
@@ -34,7 +34,7 @@ input=$(set_checksum "style_responsive" ./_site/assets/styles/99_responsive.min.
 input=$(set_checksum "script_index" ./_site/assets/scripts/index.js)
 
 # Pages
-mend -i "$input" ./src/index.html >./_site/index.html &
+mend --input "$input" ./src/index.html >./_site/index.html &
 
 wait
 echo "Done."

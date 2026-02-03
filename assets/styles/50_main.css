@@ -140,7 +140,7 @@ aside > a .icon:first-child {
 	opacity: 0.5;
 }
 
-aside > a.--selected,
+aside > a[data-selected="true"],
 aside > a:hover {
 	background-color: var(--bg-black-bright);
 
@@ -153,15 +153,15 @@ aside > a.category-projects {
 	--current-highlight-color: var(--fg-blue-bright);
 }
 
-aside > a.category-misc:hover {
+aside > a.category-misc {
 	--current-highlight-color: var(--fg-aqua-bright);
 }
 
-aside > a.category-minecraft:hover {
+aside > a.category-minecraft {
 	--current-highlight-color: var(--fg-purple);
 }
 
-aside > a.category-util:hover {
+aside > a.category-util {
 	--current-highlight-color: var(--fg-yellow-bright);
 }
 

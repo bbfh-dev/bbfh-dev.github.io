@@ -27,7 +27,9 @@ main > header {
 }
 
 a:hover,
-aside header a:hover {
+a:focus,
+aside header a:hover,
+aside header a:focus {
 	text-decoration: underline;
 	text-decoration-color: var(--current-highlight-color);
 	text-decoration-thickness: 2px;
@@ -38,9 +40,10 @@ aside header a:hover {
 }
 
 a:focus,
-a.--selected,
+a[data-selected="true"],
 aside header a:focus,
-aside header a.--selected,
+aside header a[data-selected="true"],
 .navigation-button:focus {
-	color: var(--fg-orange-bright);
+	color: var(--current-highlight-color);
+	outline: none;
 }
