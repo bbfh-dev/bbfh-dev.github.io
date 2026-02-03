@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 rm -rf ./_site
 mkdir -p ./_site
@@ -11,14 +11,14 @@ for file in ./_site/assets/styles/*.css; do
 	esbuild --minify $file >$dest &
 done
 
-function get_checksum {
+get_checksum() {
 	file=$1
 	sha256sum $file | cut -d ' ' -f1
 }
 
 input='{}'
 
-function set_checksum {
+set_checksum() {
 	name=$1
 	file=$2
 	echo $input | jq -M ".checksums.$1 |= \"$(get_checksum $2)\""
