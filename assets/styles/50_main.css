@@ -157,6 +157,10 @@ aside > a.category-minecraft:hover {
 	text-decoration-color: var(--fg-purple);
 }
 
+aside > a.category-util:hover {
+	text-decoration-color: var(--fg-yellow-bright);
+}
+
 aside h2 {
 	font-size: 0.75rem;
 	font-family: Rubik, sans-serif;
