@@ -65,8 +65,8 @@ body {
 	width: 2rem;
 	height: 2rem;
 	cursor: pointer;
-	color: inherit;
 	display: none;
+	color: var(--fg-white-bright);
 }
 
 .navigation-button:hover {
@@ -219,6 +219,11 @@ main ul {
 
 main li {
 	list-style-type: disc;
+}
+
+main b {
+	font-weight: 600;
+	color: var(--fg-white-bright);
 }
 
 main .code {
