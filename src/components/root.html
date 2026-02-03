@@ -8,7 +8,7 @@
 		<meta name="author" content="BubbleFish" />
 		<meta name="description" content="My personal website containing my work" />
 
-		<title>[[ this.title ]] @ [[ this.space ]] — bbfh.me</title>
+		<title>[[ this.title ]] — bbfh.me</title>
 		<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
 		<link href="/assets/styles/01_reset.min.css?checksum=[[ ^.checksums.style_reset ]]" rel="stylesheet" />
 		<link href="/assets/styles/02_fonts.min.css?checksum=[[ ^.checksums.style_fonts ]]" rel="stylesheet" />
@@ -23,7 +23,19 @@
 	<body>
 		<div id="root">
 			<pkg:sidebar :title="[[ this.title ]]" />
-			<mend:slot />
+			<main>
+				<header>
+					<button onclick="scrollOnMobile(false);" class="navigation-button">
+						<mend:include :src="icons/navigation_angle_left.svg" />
+					</button>
+					<span>
+						<mend:include :src="icons/hashtag.svg" />
+						<span>[[ this.title ]]</span>
+					</span>
+				</header>
+				<hr />
+				<mend:slot />
+			</main>
 		</div>
 	</body>
 

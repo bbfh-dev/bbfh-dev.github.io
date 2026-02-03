@@ -35,6 +35,7 @@ input=$(set_checksum "script_index" ./_site/assets/scripts/index.js)
 
 # Pages
 mend --input "$input" ./src/index.html >./_site/index.html &
+mend --input "$input" ./src/artwork.html >./_site/artwork.html &
 
 wait
 echo "Done."
