@@ -16,6 +16,19 @@
 	#root {
 		justify-content: center;
 	}
+
+	aside .--desktop-only {
+		display: none !important;
+	}
+
+	aside header,
+	aside a {
+		justify-content: center;
+	}
+
+	aside > a .icon:first-child {
+		opacity: 1;
+	}
 }
 
 @media only screen and (max-width: 40rem) {
@@ -23,10 +36,7 @@
 		justify-content: start;
 	}
 
-	aside {
-		min-width: 100vw;
-	}
-
+	aside,
 	main {
 		min-width: calc(100vw - 2rem);
 	}

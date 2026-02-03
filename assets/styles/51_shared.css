@@ -3,3 +3,31 @@
 	flex-direction: row;
 	align-items: stretch;
 }
+
+aside header,
+aside a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+aside,
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+a:hover,
+aside header a:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--fg-orange-bright);
+	text-decoration-thickness: 2px;
+}
+
+a:focus,
+a.--selected,
+aside header a:focus,
+aside header a.--selected {
+	color: var(--fg-orange-bright);
+}

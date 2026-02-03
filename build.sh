@@ -33,8 +33,7 @@ input=$(set_checksum "style_responsive" ./_site/assets/styles/99_responsive.min.
 input=$(set_checksum "script_index" ./_site/assets/scripts/index.js)
 
 # Pages
-mend -i "$input" ./src/index.html >./_site/index.html
+mend -i "$input" ./src/index.html >./_site/index.html &
 
 wait
 echo "Done."
-notify-send "Done"
