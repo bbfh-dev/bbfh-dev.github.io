@@ -13,8 +13,8 @@
 	--fg-green-bright: #b8bb26;
 	--fg-yellow: #d79921;
 	--fg-yellow-bright: #fabd2f;
-	--fg-blue: #458588;
-	--fg-blue-bright: #83a598;
+	--fg-blue: #0e86d6;
+	--fg-blue-bright: #1997ff;
 	--fg-purple: #b16286;
 	--fg-purple-bright: #d3869b;
 	--fg-aqua: #689d6a;
@@ -56,6 +56,21 @@ body {
 	overflow-y: hidden;
 }
 
+.navigation-button {
+	background-color: transparent;
+	border: none;
+	border-radius: 1rem;
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+	color: inherit;
+	display: none;
+}
+
+.navigation-button:hover {
+	background-color: var(--bg-highlight);
+}
+
 aside,
 main {
 	scroll-snap-align: start;
@@ -89,7 +104,7 @@ aside header a {
 	margin-right: auto;
 }
 
-aside hr {
+hr {
 	width: 100%;
 	height: 2px;
 	border: none;
@@ -130,6 +145,18 @@ aside > a:hover {
 	}
 }
 
+aside > a.category-projects:hover {
+	text-decoration-color: var(--fg-blue-bright);
+}
+
+aside > a.category-misc:hover {
+	text-decoration-color: var(--fg-aqua-bright);
+}
+
+aside > a.category-minecraft:hover {
+	text-decoration-color: var(--fg-purple);
+}
+
 aside h2 {
 	font-size: 0.75rem;
 	font-family: Rubik, sans-serif;
@@ -149,21 +176,19 @@ main {
 	line-height: 1.5;
 	border-radius: 1rem;
 	padding: 1rem;
-	gap: 1rem;
+	gap: 0.5rem;
 	overflow-y: auto;
 }
 
-.navigation-button {
-	background-color: transparent;
-	border: none;
-	border-radius: 1rem;
-	width: 2rem;
-	height: 2rem;
-	cursor: pointer;
-	color: inherit;
-	display: none;
+main > header {
+	display: flex;
 }
 
-.navigation-button:hover {
-	background-color: var(--bg-highlight);
+main > header span {
+	gap: 0.5rem;
+	font-weight: 600;
+}
+
+main > header .icon {
+	opacity: 0.5;
 }

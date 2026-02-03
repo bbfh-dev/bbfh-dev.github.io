@@ -2,10 +2,12 @@
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
+	justify-content: center;
 }
 
 aside header,
-aside a {
+aside a,
+main > header span {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -18,7 +20,8 @@ main {
 	align-items: stretch;
 }
 
-.navigation-button {
+.navigation-button,
+main > header {
 	align-items: center;
 	justify-content: center;
 }
