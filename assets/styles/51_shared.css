@@ -29,8 +29,12 @@ main > header {
 a:hover,
 aside header a:hover {
 	text-decoration: underline;
-	text-decoration-color: var(--fg-orange-bright);
+	text-decoration-color: var(--current-highlight-color);
 	text-decoration-thickness: 2px;
+
+	.icon {
+		color: var(--current-highlight-color);
+	}
 }
 
 a:focus,

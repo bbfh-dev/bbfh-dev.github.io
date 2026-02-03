@@ -22,6 +22,8 @@
 
 	--sidebar-width: 16rem;
 	--content-width: 50rem;
+
+	--current-highlight-color: var(--fg-orange-bright);
 }
 
 .icon {
@@ -145,20 +147,20 @@ aside > a:hover {
 	}
 }
 
-aside > a.category-projects:hover {
-	text-decoration-color: var(--fg-blue-bright);
+aside > a.category-projects {
+	--current-highlight-color: var(--fg-blue-bright);
 }
 
 aside > a.category-misc:hover {
-	text-decoration-color: var(--fg-aqua-bright);
+	--current-highlight-color: var(--fg-aqua-bright);
 }
 
 aside > a.category-minecraft:hover {
-	text-decoration-color: var(--fg-purple);
+	--current-highlight-color: var(--fg-purple);
 }
 
 aside > a.category-util:hover {
-	text-decoration-color: var(--fg-yellow-bright);
+	--current-highlight-color: var(--fg-yellow-bright);
 }
 
 aside h2 {
@@ -218,7 +220,7 @@ main li {
 main .code {
 	display: inline-block;
 	background-color: var(--bg-black);
-	padding: 0.25rem 0.5rem;
+	padding: 0 0.25rem;
 	margin: -0.5rem 0;
 	border-radius: 0.25rem;
 	font-family: monospace;
