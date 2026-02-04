@@ -17,9 +17,9 @@
 	<hr />
 
 	<h2 class="--desktop-only">Projects:</h2>
-	<pkg:sidebar-button-link :title="Eyecons" href="https://github.com/bbfh-dev/eyecons" class="category-projects">
+	<pkg:sidebar-button :title="Eyecons" data-selected="[[ this.title == 'Eyecons' ]]" href="/eyecons" class="category-projects">
 		<mend:include :src="icons/logo_eyecons.svg" />
-	</pkg:sidebar-button-link>
+	</pkg:sidebar-button>
 	<pkg:sidebar-button-link :title="Tomefile" href="https://github.com/tomefile" class="category-projects">
 		<mend:include :src="icons/scroll.svg" />
 	</pkg:sidebar-button-link>

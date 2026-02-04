@@ -37,6 +37,7 @@ input=$(set_checksum "script_index" ./_site/assets/scripts/index.js)
 mend --input "$input" ./src/index.html >./_site/index.html &
 mend --input "$input" ./src/artwork.html >./_site/artwork.html &
 mend --input "$input" ./src/minecraft_unicode.html >./_site/minecraft_unicode.html &
+mend --input "$input" ./src/eyecons.html >./_site/eyecons.html &
 
 wait
 echo "Done."

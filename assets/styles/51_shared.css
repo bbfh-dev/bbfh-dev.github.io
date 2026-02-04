@@ -9,14 +9,18 @@ aside header,
 aside a,
 main > header span,
 #dialog header,
-main .logo {
+main .logo,
+.project-banner header,
+.project-banner section div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
 aside,
-main {
+main,
+.project-banner,
+.project-banner section {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;

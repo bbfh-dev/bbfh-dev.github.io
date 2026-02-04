@@ -1,6 +1,7 @@
 :root {
 	--bg-black: #000000;
 	--bg-black-bright: #121212;
+	--bg-subtle: rgba(255, 255, 255, 0.05);
 	--bg-highlight: rgba(255, 255, 255, 0.1);
 
 	--fg-white: #e0e0e0;
@@ -311,4 +312,23 @@ main .logo img {
 	font-family: Minecraft, monospace;
 	font-size: 1.5rem;
 	color: var(--fg-white-bright);
+}
+
+.project-banner header {
+	background-color: var(--bg-highlight);
+	padding: 0.5rem 1rem;
+	border-radius: 1rem 1rem 0 0;
+	gap: 0.5rem;
+	color: var(--fg-white-bright);
+}
+
+.project-banner section {
+	background-color: var(--bg-subtle);
+	padding: 0.5rem 1rem;
+	border-radius: 0 0 1rem 1rem;
+}
+
+.project-banner section a {
+	--current-highlight-color: var(--fg-blue-bright);
+	margin-left: auto;
 }
