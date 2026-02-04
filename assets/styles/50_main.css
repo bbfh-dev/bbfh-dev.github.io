@@ -203,14 +203,29 @@ main > header .icon {
 	opacity: 0.5;
 }
 
-main h1 {
+main h1,
+main h2,
+main h3 {
 	font-family: Rubik, sans-serif;
 	font-weight: 600;
-	font-size: 2rem;
-	margin-top: 2rem;
-	margin-bottom: 0.5rem;
 	line-height: 1;
 	color: var(--fg-white-bright);
+	margin-bottom: 0.5rem;
+}
+
+main h1 {
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+
+main h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+main h3 {
+	font-size: 1.5rem;
+	margin-top: 1rem;
 }
 
 main ul {
@@ -224,6 +239,10 @@ main li {
 main b {
 	font-weight: 600;
 	color: var(--fg-white-bright);
+}
+
+main em {
+	opacity: 0.5;
 }
 
 main .code {
@@ -244,4 +263,46 @@ main a {
 	text-decoration-color: inherit;
 	text-decoration-thickness: 2px;
 	font-weight: 500;
+}
+
+main .artwork {
+	background-color: transparent;
+	padding: 0;
+	width: calc(100% - 4px);
+	border-radius: 1rem;
+	border: 2px solid var(--bg-black);
+	cursor: pointer;
+}
+
+main .artwork:hover {
+	border: 2px solid var(--fg-white-bright);
+	filter: grayscale(0.5);
+}
+
+main .artwork img {
+	width: 100%;
+	border-radius: 1rem;
+	/* I pulled this number out of my ass. It works™ unless it doesn't */
+	margin-bottom: -6px;
+}
+
+main .logo {
+	background: url("/assets/images/tile.svg") repeat 0.5rem 0.5rem;
+	justify-content: center;
+	padding: 1rem;
+	width: calc(100% - 2rem);
+	border-radius: 0.5rem;
+	gap: 2rem;
+}
+
+main .logo svg {
+	width: 2rem;
+	height: 2rem;
+}
+
+main .logo img {
+	background-color: var(--bg-black-bright);
+	border: 2px solid var(--bg-black-bright);
+	outline: 2px solid #242424;
+	border-radius: 1rem;
 }

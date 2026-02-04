@@ -7,7 +7,9 @@
 
 aside header,
 aside a,
-main > header span {
+main > header span,
+#dialog header,
+main .logo {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
