@@ -35,7 +35,9 @@ jobs:
                   go-version: "1.25.5"
 
             - name: Install esbuild
-              run: sudo apt-get update && sudo apt-get -y install esbuild
+              run: |
+                  sudo apt-get update
+                  sudo apt-get -y install esbuild coreutils
 
             - name: Install Mend
               run: go install github.com/bbfh-dev/mend@v1.0.1-alpha.4
