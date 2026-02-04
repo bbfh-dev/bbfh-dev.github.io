@@ -1,0 +1,14 @@
+<section class="project-banner">
+	<header>
+		<mend:include :src="icons/globe.svg" />
+		<span>[[ this.author ]] / <a href="https://github.com/[[ this.author ]]/[[ this.repo ]]">[[ this.repo ]]</a></span>
+	</header>
+	<section>
+		<div>
+			<mend:slot />
+		</div>
+		<div>
+			<a href="https://github.com/[[ this.author ]]/[[ this.repo ]]">Open on GitHub</a>
+		</div>
+	</section>
+</section>

@@ -206,7 +206,8 @@ main > header .icon {
 
 main h1,
 main h2,
-main h3 {
+main h3,
+main h4 {
 	font-family: Rubik, sans-serif;
 	font-weight: 600;
 	line-height: 1;
@@ -227,6 +228,10 @@ main h2 {
 main h3 {
 	font-size: 1.5rem;
 	margin-top: 1rem;
+}
+
+main h4 {
+	font-size: 1rem;
 }
 
 main ul {
@@ -314,6 +319,10 @@ main .logo img {
 	color: var(--fg-white-bright);
 }
 
+.project-banner {
+	margin-bottom: 1rem;
+}
+
 .project-banner header {
 	background-color: var(--bg-highlight);
 	padding: 0.5rem 1rem;
@@ -331,4 +340,19 @@ main .logo img {
 .project-banner section a {
 	--current-highlight-color: var(--fg-blue-bright);
 	margin-left: auto;
+}
+
+.warning {
+	border-left: 4px solid var(--fg-yellow-bright);
+	padding: 0.5rem 1rem;
+	color: var(--fg-white-bright);
+}
+
+.warning h4 {
+	color: var(--fg-yellow-bright);
+}
+
+.warning em {
+	font-size: 0.75rem;
+	font-weight: 400;
 }

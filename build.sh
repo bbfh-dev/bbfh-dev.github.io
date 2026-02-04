@@ -38,6 +38,8 @@ mend --input "$input" ./src/index.html >./_site/index.html &
 mend --input "$input" ./src/artwork.html >./_site/artwork.html &
 mend --input "$input" ./src/minecraft_unicode.html >./_site/minecraft_unicode.html &
 mend --input "$input" ./src/eyecons.html >./_site/eyecons.html &
+mend --input "$input" ./src/tomefile.html >./_site/tomefile.html &
+mend --input "$input" ./src/crowscout_ii.html >./_site/crowscout_ii.html &
 
 wait
 echo "Done."
