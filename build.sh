@@ -7,6 +7,7 @@ cp ./src/CNAME ./_site/.
 
 # Assets
 cp -r ./assets ./_site/.
+cp -r ./src/vintage ./_site/vintage
 for file in ./_site/assets/styles/*.css; do
 	dest=${file%.css}.min.css
 	esbuild --minify $file >$dest &
@@ -40,6 +41,7 @@ mend --input "$input" ./src/minecraft_unicode.html >./_site/minecraft_unicode.ht
 mend --input "$input" ./src/eyecons.html >./_site/eyecons.html &
 mend --input "$input" ./src/tomefile.html >./_site/tomefile.html &
 mend --input "$input" ./src/crowscout_ii.html >./_site/crowscout_ii.html &
+mend --input "$input" ./src/blog.html >./_site/blog.html &
 
 wait
 echo "Done."
