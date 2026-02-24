@@ -4,10 +4,14 @@
 		"type"
 	],
 	"properties": {
+		"$schema": {
+			"type": "string"
+		},
 		"type": {
 			"type": "string",
 			"enum": [
-				"generate",
+				"generator",
+				"collector",
 				"inline"
 			]
 		},
@@ -30,6 +34,12 @@
 			}
 		},
 		"arguments": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"patterns": {
 			"type": "array",
 			"items": {
 				"type": "string"
